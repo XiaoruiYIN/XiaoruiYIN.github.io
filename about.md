@@ -5,7 +5,7 @@ description:
 permalink: /about/
 ---
 
-<h1>About</h1>
+##About
 
 # 雪山大福/X.YIN
 
