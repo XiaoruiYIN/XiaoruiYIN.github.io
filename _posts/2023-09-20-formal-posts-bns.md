@@ -11,7 +11,7 @@ tags:
   - BNS
   - Mathematics
 author: 雪山大福看不见你
-math:true
+math: true
 ---
 
 > This is a collection of some math notes published on "BNS放送会" before my L2 degree. Most of them are written in Chinese.
