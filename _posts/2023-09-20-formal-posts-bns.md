@@ -14,7 +14,7 @@ author: 雪山大福看不见你
 math: true
 ---
 
-> This is a collection of some math notes published on "BNS放送会" before my L2 degree. Most of them are written in Chinese.
+> This is a collection of some math notes posted on "BNS放送会" before my L2 degree. Most of them are written in Chinese.
 
 
 1.[BNSnote004](https://mp.weixin.qq.com/s/XzMNKvNFNoJtS-yTlSh9ew) We prove that if there exists injections $f:A\to B$ and $g:B\to A$ then there exists a bijection between A and B using Tarski's fixed point theorem.
