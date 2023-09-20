@@ -6,7 +6,7 @@ title: 雪山大福看不见你
 description: 雪山大福看不见你
 tags:
  
-show_hero: false
+show_hero: true
 menu:
   - title: Home
     url: /
