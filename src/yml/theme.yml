@@ -1,5 +1,6 @@
-$themeColor: #1f1e33;
-$primaryDark: #141414;
-$accentDark: #ffffff;
-$lightGray: #f2f2f2;
-$texts: #333333;
+
+themeColor: '#1f1e33'
+primaryDark: '#141414'
+accentDark: '#ffffff'
+lightGray: '#f2f2f2'
+texts: '#333333'
