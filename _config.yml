@@ -5,12 +5,8 @@ name: 雪山大福看不见你
 title: 雪山大福看不见你
 description: XiaoruiYIN
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
-show_hero: true
+ 
+show_hero: false
 menu:
   - title: Home
     url: /
@@ -20,12 +16,8 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
-# See: https://disqus.com/
-disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-formspree_form_id: formspree_form_id
+
+
 
 
 # Social Media Settings
@@ -34,7 +26,7 @@ formspree_form_id: formspree_form_id
 
 twitter_username: rorange30303
 instagram_username: rorange30303
-
+weibo_username: rorange30303
 
 
 # Posts Settings
