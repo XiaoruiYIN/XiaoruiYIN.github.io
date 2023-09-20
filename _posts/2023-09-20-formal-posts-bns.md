@@ -1,5 +1,5 @@
 ---
-date: 2023-09-20
+date: 2023-09-19
 layout: post
 title: Formal Posts BNS
 subtitle: 
