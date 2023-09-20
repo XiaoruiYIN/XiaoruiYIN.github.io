@@ -4,129 +4,31 @@ layout: post
 title: Formal Posts BNS
 subtitle: 
 description: 
-image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/paraineve.jpg
-optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/paraineve.jpg
+image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/pre.HEIC
+optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/pre.HEIC
 category: BNS
 tags:
   - BNS
   - Mathematics
 author: 雪山大福看不见你
+math:true
 ---
 
 > This is a collection of some math notes published on "BNS放送会" before my L2 degree. Most of them are written in Chinese.
 
 
-## Inline HTML elements
+*[BNSnote004](https://mp.weixin.qq.com/s/XzMNKvNFNoJtS-yTlSh9ew) We prove that if there exists injections $f:A\to B$ and $g:B\to A$ then there exists a bijection between A and B using Tarski's fixed point theorem.
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+*[BNSnote006](https://mp.weixin.qq.com/s/tPijDuXJAsf0Xs1sMSMllA) A note on doubly periodic functions.
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+*[BNSnote007](https://mp.weixin.qq.com/s/5X5KVdyg4YP7gZ_v5GDpag) The definition of Riemann surfaces.
 
-Most of these elements are styled by browsers with few modifications on our part.
+*[BNSnote008](https://mp.weixin.qq.com/s/mRHCEQjdg1W5NF02bpBtQA) A summary of the first three chapters of GTM228.
 
-# Heading 1
+*[BNSnote009](https://mp.weixin.qq.com/s/Q5u_-tBjNMcX4VwsTTZ85A) First properties of $\zeta$ and $L$.
 
-## Heading 2
+*[BNSnote010](https://mp.weixin.qq.com/s/cID9-AILAyZC5FUJes75eA) Algebraic Number Field; Integral Basis.
 
-### Heading 3
+*[BNSnote011](https://mp.weixin.qq.com/s/uQ1A0ZEnmeEPkOUxcfhGXQ) A note on covering spaces (unfinished/abandoned).
 
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
-
-
-
-
+*[BNSnote012](https://mp.weixin.qq.com/s/U_0C954GMb6LF8_Id5jL5A) A note on representations of finite groups (unfinished/abandoned).
