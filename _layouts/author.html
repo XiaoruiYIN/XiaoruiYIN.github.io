@@ -33,6 +33,9 @@ layout: page
 {% if page.github_username %}
     {% assign author_urls = author_urls | append: '"https://github.com/' | append: page.github_username | append: '",' %}
 {% endif %}
+{% if page.weibo_username %}
+    {% assign author_urls = author_urls | append: '"https://weibo.com/' | append: page.weibo_username | append: '",' %}
+{% endif %}
 {% if page.facebook_username %}
     {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: page.facebook_username | append: '",' %}
 {% endif %}
