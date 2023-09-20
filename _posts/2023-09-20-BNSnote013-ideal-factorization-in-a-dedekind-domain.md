@@ -4,8 +4,8 @@ layout: post
 title: BNSnote013 Ideal Factorization in a Dedekind Domain
 subtitle: 
 description: 
-image:
-optimized_image:
+image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/IMG_0660.jpg
+optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/IMG_0660.jpg
 category: Mathematics
 tags:
   - BNS
