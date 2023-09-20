@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Blog
-slug: blog
-description: A category for general blog posts.
+title: Mathematics
+slug: Mathematics
+description: Mathematics
 ---
 
