@@ -1,5 +1,2 @@
-themeColor: '#fae6e6'
-primaryDark: '#1f1e33'
-accentDark: '#fafafa'
-lightGray: '#f2f2f2'
-texts: '#fae6e6'
+
+@import "jekflix";
