@@ -4,8 +4,8 @@ layout: post
 title: Formal Posts BNS
 subtitle: 
 description: 
-image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/pre.HEIC
-optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/pre.HEIC
+image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/prqe.png
+optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/prqe.png
 category: BNS
 tags:
   - BNS
