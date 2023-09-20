@@ -9,9 +9,9 @@ permalink: /about/
 
 ## 雪山大福/X.YIN
 
-**Language**:CN(Mothertongue)/FR(Niveau B2)/EN/JP
+**Language**: CN(Mothertongue)/FR(Niveau B2)/EN/JP
 
-**Contact**: [<font color="blue">Email(personal)</font>](rorange30303@outlook.com)
+**Contact**: rorange30303@outlook.com; xiaorui.yin@outlook.fr
 
 Recently focused on number theory and freeform hardcore. 
 
