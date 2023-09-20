@@ -21,7 +21,7 @@ math: true
 
 2.[_BNSnote005_](https://mp.weixin.qq.com/s?__biz=Mzk0MzIzMzY3MQ==&mid=2247483817&idx=1&sn=804bcbd651646613cadbc4ad4e491681) We sketch a proof of Riemann's existence theorem.
 
-2.[_BNSnote006_](https://mp.weixin.qq.com/s/tPijDuXJAsf0Xs1sMSMllA) A note on doubly periodic functions. (<a href="xiaoruiyin.github.io/pdff/bns006.pdf" target="_blank">PDF file</a>)
+2.[_BNSnote006_](https://mp.weixin.qq.com/s/tPijDuXJAsf0Xs1sMSMllA) A note on doubly periodic functions. (<a href="https://xiaoruiyin.github.io/pdff/bns006.pdf" target="_blank">PDF file</a>)
 
 3.[_BNSnote007_](https://mp.weixin.qq.com/s/5X5KVdyg4YP7gZ_v5GDpag) The definition of Riemann surfaces.
 
@@ -33,4 +33,4 @@ math: true
 
 7.[_BNSnote011_](https://mp.weixin.qq.com/s/uQ1A0ZEnmeEPkOUxcfhGXQ) A note on covering spaces (unfinished/abandoned).
 
-8.[_BNSnote012_](https://mp.weixin.qq.com/s/U_0C954GMb6LF8_Id5jL5A) A note on representations of finite groups (unfinished/abandoned).(<a href="xiaoruiyin.github.io/pdff/finite_grp_representation.pdf" target="_blank">PDF file</a>)
+8.[_BNSnote012_](https://mp.weixin.qq.com/s/U_0C954GMb6LF8_Id5jL5A) A note on representations of finite groups (unfinished/abandoned).(<a href="https://xiaoruiyin.github.io/pdff/finite_grp_representation.pdf" target="_blank">PDF file</a>)
