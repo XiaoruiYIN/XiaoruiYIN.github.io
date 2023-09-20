@@ -1,3 +1,4 @@
+---
 date: 2023-09-20
 layout: post
 title: BNSnote013 Ideal Factorization in a Dedekind Domain
@@ -11,6 +12,7 @@ tags:
   - Mathematics
 author: X.YIN
 math: true
+---
 
 > References : 	加藤　和也, 黒川　信重, 斎藤　毅, 数論I Fermatの夢と類体論; Sudesh Kaur Khanduja, A Textbook of Algebraic Number Theory.
 
