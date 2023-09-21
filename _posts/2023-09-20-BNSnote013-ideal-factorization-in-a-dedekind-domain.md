@@ -37,7 +37,9 @@ _Step2_  $\mathfrak{p}_i=\mathfrak{p}_j$ iff. $i=j$.
 
 _Step3_  Mq $(p)=\prod_{k=1}^h\mathfrak{p}_k^{l_k}$ où $l_k\leq e_k$.
 > supposons que ${A_k\mathfrak{p}_k=(F_k(\theta))}$ $\text{et}$ $B_k\mathfrak{p}_k=(p)$.
+
 > $A_k,\ B_k$ sont premiers entre eux. Note que $B_k|(p)|(\prod_{k=1}^gF_k^{e_k}(\theta))=\prod_{k=1}^g\mathfrak{p}_k^{e_k}A_k^{e_k}$. 
+
 > En déduire que $(p)|\prod_{k=1}^g\mathfrak{p}_k^{e_k}$.
 
 _Step4_  Mq $e_k=l_k$. 
