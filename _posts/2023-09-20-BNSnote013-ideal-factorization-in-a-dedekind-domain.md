@@ -24,15 +24,15 @@ In this part we establish some properties of Dedekind domains and $\mathcal{O}_K
 
 The proof of the following theorem here is missing in the beamer. 
 
-**Theorème(Dedekind)**. <p>$p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\theta]$ dans $\mathcal{O}_{K}$</p><p>$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.</p>
+**Theorème(Dedekind)**. $p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\theta]$ ,$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
     Alors la factorisation de l'idéal $(p)$ sur $\mathcal{O}_K$ est $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
 
 **Proof(sketch)**. Dénote $\mathfrak{p}_k=(p,F_k(\theta))$. 
 
-<p>Step1</p>  Mq $\mathfrak{p}_k$ est un idéal propre, donc $\mathfrak{p}_k$ est maximal.
+_Step1_  Mq $\mathfrak{p}_k$ est un idéal propre, donc $\mathfrak{p}_k$ est maximal.
 > sinon $(p)$ et $(F_k(\theta))$ sont premiers entre eux.
 
-<p>Step2</p>  $\mathfrak{p}_i=\mathfrak{p}_j$ iff. $i=j$. 
+_Step2_  $\mathfrak{p}_i=\mathfrak{p}_j$ iff. $i=j$. 
 > sinon on suppose que $F_iU+F_jV=1+pW$ où $U, V, W$ dans $\mathbb{Q}[X]$, en déduire $1\in\mathfrak{p}_i$.
 
 _Step3_  Mq $(p)=\prod_{k=1}^h\mathfrak{p}_k^{l_k}$ où $l_k\leq e_k$.
