@@ -54,9 +54,9 @@ Put $K=\mathbb{Q}(\sqrt{d})$ where $d$ is square-free. It follows immediately fr
 
 **Corollary** For any odd prime $p$ and quadratic field $K=\mathbb{Q}(\sqrt{d})$,
 
-$$\left\(\frac{d}{p}\right\)=1 \Leftrightarrow (p)=\mathfrak{ab},\ \mathfrak{a,b}\text{ are different prime ideals of }\mathcal{O}_K.$$
+$$\left(\frac{d}{p}\right)=1 \Leftrightarrow (p)=\mathfrak{ab},\ \mathfrak{a,b}\text{ are different prime ideals of }\mathcal{O}_K.$$
 
-$$\left\(\frac{d}{p}\right\)=-1 \Leftrightarrow (p)text{ is a prime ideal of }\mathcal{O}_K.$$
+$$\left(\frac{d}{p}\right)=-1 \Leftrightarrow (p)text{ is a prime ideal of }\mathcal{O}_K.$$
 
 This provides another point of view of the Legendre symbol, we will use it to prove the quadratic reciprocity law.
 
