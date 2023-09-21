@@ -20,7 +20,7 @@ math: true
 
 In this part we establish some properties of Dedekind domains and $\mathcal{O}_K$ and some basic results of ramifications.
 
-[<font color="blue">PDF file</font>](https://xiaoruiyin.github.io/pdff/BNS013.pdf) of part I.
+See [<font color="blue">PDF file</font>](https://xiaoruiyin.github.io/pdff/BNS013.pdf).
 
 The proof of the following theorem here is missing in the beamer. 
 
