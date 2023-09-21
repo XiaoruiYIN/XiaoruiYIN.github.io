@@ -44,7 +44,7 @@ _Step4_  Mq $e_k=l_k$.
 > on a déjà $\sum_{k=1}^ge_k\mathrm{deg}F_k=n$. $\prod_{k=1}^gF_k^{l_k}(\theta)\in (p)$ $\Rightarrow$ $\sum_{k=1}^gl_k\mathrm{deg}F_k\geq \mathrm{dim}_{\mathbb{Z}/p\mathbb{Z}}\mathcal{O}_K/p\mathcal{O}_K=n$.
 
 _Step5_  Mq $f_k=\mathrm{deg}F_k$.
-> Notons que l'extension des corps $\mathbb{Z}/p\mathbb{Z}\hookrightarrow\mathcal{O}_K/\mathfrak{p}_k$ est normale (ces deux corps sont finis) et que $\theta+\mathfrak{p}_k$ annule $\widetilde{F_k}$, donc $\widetilde{F_k}$ est scindé dans $\mathcal{O}_K/\mathfrak{p}_k$, alors $f_k=[\mathcal{O}_K/\mathfrak{p}_k:\mathbb{Z}/p\mathbb{Z}]\geq\mathrm{deg}F_k$. $\hfill\square$
+> Notons que l'extension des corps $\mathbb{Z}/p\mathbb{Z}\hookrightarrow\mathcal{O}_K/\mathfrak{p}_k$ est normale (ces deux corps sont finis) et que $\theta+\mathfrak{p}_k$ annule $\widetilde{F_k}$, donc $\widetilde{F_k}$ est scindé dans $\mathcal{O}_K/\mathfrak{p}_k$, alors $f_k=[\mathcal{O}_K/\mathfrak{p}_k:\mathbb{Z}/p\mathbb{Z}]\geq\mathrm{deg}F_k$. $\square$
 
 
 # Part II, ?
