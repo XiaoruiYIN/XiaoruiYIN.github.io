@@ -24,7 +24,7 @@ In this part we establish some properties of Dedekind domains and $\mathcal{O}_K
 
 The proof of the following theorem here is missing in the beamer. 
 
-**Theorème**. Supposons que $p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\thera]$ in $\mathcal{O}_K$, $\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$  est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
+**Theorème**. Supposons que $p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\theta]$ dans $\mathcal{O}_K $, $\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$  est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
     Alors la factorisation de l'idéal $(p)$ sur $\mathcal{O}_K$ est $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
 
 **Proof(sketch)**. _Step1_ Dénote $\mathfrak{p}_k=(p,F_k(\theta))$. 
@@ -35,8 +35,10 @@ _Step1_  Mq $\mathfrak{p}_k$ est un idéal propre, donc $\mathfrak{p}_k$ est max
 _Step2_  $\mathfrak{p}_i=\mathfrak{p}_j$ iff. $i=j$. 
 > sinon on suppose que $F_iU+F_jV=1+pW$ où $U, V, W$ dans $\mathbb{Q}[X]$, en déduire $1\in\mathfrak{p}_i$.
 
-_Step3_  Mq $(p)=\prod_{k=1}^h\mathfrak{p}_k^{l_k}$ où $l_k\leq\e_k$.
-> supposons que $A_k\mathfrak{p}_k=(F_k(\theta))$ et $B_k\mathfrak{p}_k=(p)$, Alors $A_k,\ B_k$ sont premiers entre eux. Note que $B_k|(p)|(\prod_{k=1}^gF_k^{e_k}(\theta))=\prod_{k=1}^g\mathfrak{p}_k^{e_k}A_k^{e_k}$. En déduire que $(p)|\prod_{k=1}^g\mathfrak{p}_k^{e_k}$.
+_Step3_  Mq $(p)=\prod_{k=1}^h\mathfrak{p}_k^{l_k}$ où $l_k\leq e_k$.
+> supposons que $A_k\mathfrak{p}_k=(F_k(\theta))$ et $B_k\mathfrak{p}_k=(p)$.
+> $A_k,\ B_k$ sont premiers entre eux. Note que $B_k|(p)|(\prod_{k=1}^gF_k^{e_k}(\theta))=\prod_{k=1}^g\mathfrak{p}_k^{e_k}A_k^{e_k}$. 
+> En déduire que $(p)|\prod_{k=1}^g\mathfrak{p}_k^{e_k}$.
 
 _Step4_  Mq $e_k=l_k$. 
 > on a déjà $\sum_{k=1}^ge_k\mathrm{deg}F_k=n$. $\prod_{k=1}^gF_k^{l_k}(\theta)\in (p)$ $\Rightarrow$ $\sum_{k=1}^gl_k\mathrm{deg}F_k\geq \mathrm{dim}_{\mathbb{Z}/p\mathbb{Z}}\mathcal{O}_K/p\mathcal{O}_K=n$.
