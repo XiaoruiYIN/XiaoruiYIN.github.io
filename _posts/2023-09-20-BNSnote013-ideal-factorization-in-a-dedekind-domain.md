@@ -45,6 +45,7 @@ _Step4_  Mq $e_k=l_k$.
 
 _Step5_  Mq $f_k=\mathrm{deg}F_k$.
 > Notons que l'extension des corps $\mathbb{Z}/p\mathbb{Z}\hookrightarrow\mathcal{O}_K/\mathfrak{p}_k$ est normale (ces deux corps sont finis) et que $\theta+\mathfrak{p}_k$ annule $\widetilde{F_k}$, donc $\widetilde{F_k}$ est scindé dans $\mathcal{O}_K/\mathfrak{p}_k$, alors $f_k=[\mathcal{O}_K/\mathfrak{p}_k:\mathbb{Z}/p\mathbb{Z}]\geq\mathrm{deg}F_k$.
+
 $\square$
 
 
