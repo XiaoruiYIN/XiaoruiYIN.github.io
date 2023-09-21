@@ -51,6 +51,7 @@ _Step5_  Mq $f_k=\mathrm{deg}F_k$.
 $\square$
 
 Put $K=\mathbb{Q}(\sqrt{d})$ where $d$ is square-free. It follows immediately from the theorem that
+
 **Corollary** For any odd prime $p$ and quadratic field $K=\mathbb{Q}(\sqrt{d})$,
 
 $$\left\(\frac{d}{p}\right\)=1 \Leftrightarrow (p)=\mathfrak{ab},\ \mathfrak{a,b}\text{ are different prime ideals of }\mathcal{O}_K.$$
