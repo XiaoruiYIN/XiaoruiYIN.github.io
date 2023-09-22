@@ -4,8 +4,8 @@ layout: post
 title: 个人喜欢的一些Freeform Hardcore
 subtitle: 2018.01-2023.08
 description: 
-image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/prqe.png
-optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/prqe.png
+image:https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
+optimized_image:https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
 category: Music
 tags:
   - Music
@@ -15,7 +15,7 @@ math: true
 
 <p>汇集一些发布日期在2018年至2023.08.03的一些我比较喜欢的随机freeform hardcore歌曲.不想花时间去研究如何做正经的Djmix,于是我们作为列表放在这里.</p>
 
-<p>限制在近五年的目的是力求听一些新的(当然这并不是说旧的歌不如近五年的歌),顺便也想传达freeform还没有死的观点,尽管这个风格可能相较于再向前推五年并没什么本质的变化.排序是随机的.</p>
+<p>限制在近五年是因为我们力求听一些新的(当然这并不是说旧的歌不如近五年的歌),顺便也想传达freeform还没有死的观点,尽管这个风格可能相较于再向前推五年并没什么本质的变化.排序是随机的.</p>
 
 1.
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2gE4PRB8JlF9YECQpvPvRZ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -124,5 +124,5 @@ math: true
 
 <p>如果之后还有发现非常喜欢的freeform也不会更新进来,但也许可以尝试做一个类似的经典作品的列表.最后建议大家多听stamina.再见.</p>
 
-<p>推销一下以前做的一个bootleg[<font color="blue">LV.4-PHANTASMA(bootleg by 555ame)</font>](http://t.cn/A6NiQzJ1)</p>
+<p>推销一下自己以前做的一个bootleg[<font color="blue">LV.4-PHANTASMA(bootleg by 555ame)</font>](http://t.cn/A6NiQzJ1)</p>
 
