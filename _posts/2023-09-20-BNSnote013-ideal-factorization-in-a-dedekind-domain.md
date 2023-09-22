@@ -22,7 +22,7 @@ In this part we establish some properties of Dedekind domains and $\mathcal{O}_K
 
 See [<font color="blue">PDF file</font>](https://xiaoruiyin.github.io/pdff/BNS013.pdf).
 
-The proof of the following theorem here is missing in the beamer. 
+The proof of the following theorem is missing in the beamer. 
 
 **Theorème(Dedekind)**. $p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\theta]$ ,$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
     Alors la factorisation de l'idéal $(p)$ est $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
