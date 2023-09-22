@@ -124,5 +124,5 @@ math: true
 
 <p>如果之后还有发现非常喜欢的freeform也不会更新进来,但也许可以尝试做一个类似的经典作品的列表.最后建议大家多听stamina.再见.</p>
 
-<p>推销一下自己以前做的一个bootleg[<font color="blue">LV.4-PHANTASMA(bootleg by 555ame)</font>](http://t.cn/A6NiQzJ1)</p>
+<p>推销一下自己以前做的一个bootleg [<font color="blue">LV.4-PHANTASMA(bootleg by 555ame)</font>](http://t.cn/A6NiQzJ1)</p>
 
