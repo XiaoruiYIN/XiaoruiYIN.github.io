@@ -4,8 +4,8 @@ layout: post
 title: 个人喜欢的一些Freeform Hardcore
 subtitle: 2018.01-2023.08
 description: 
-image:https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
-optimized_image:https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
+image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
+optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/llrpic.png
 category: Music
 tags:
   - Music
