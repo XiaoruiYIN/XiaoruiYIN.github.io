@@ -217,9 +217,25 @@ _
 _
 {L/K}(\beta B) \subset A$ iff. $\mathrm{Tr}_{L/K}(\beta w_i) \in A$ for all $i$.
 
-Suppose that $\beta=\sum_i x_iw_i$, $x_i\in K$. Then $\mathrm{Tr}_{L/K}(\beta w_i^\vee)=\mathrm{Tr}_{L/K}(x_iw_iw_i^\vee)nx_i\in A$ $\Leftrightarrow$ $\beta \in\sum_i Aw_i.$ Hence $I\subset \sum_i Aw_i$. $\square$
+Suppose that $\beta=\sum_i x_iw_i$, $x_i\in K$. Then $\mathrm{Tr}
+_
+{L/K}(\beta w
+_
+i^\vee)=\mathrm{Tr}
+_
+{L/K}(x
+_
+iw
+_
+iw
+_
+i^\vee)nx
+_
+i\in A$ $\Leftrightarrow$ $\beta \in\sum_i Aw_i.$ Hence $I\subset \sum_i Aw_i$. $\square$
 
-**Def.** The different of $B$ in $A$ $$D(B/A):=\{
+
+**Def.** The different of $B$ in $A$ 
+$$D(B/A):=\{
 \beta\in L\mid \mathrm{Tr}
 _
 {L/K}(\beta B)\subset A\}^{-1}.$$
