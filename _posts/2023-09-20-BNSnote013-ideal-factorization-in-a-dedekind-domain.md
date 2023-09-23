@@ -208,7 +208,7 @@ _
 **Lemma.** $\{
 \beta\in L\mid \mathrm{Tr}
 _
-{L/K}(\beta B)\subset A\right
+{L/K}(\beta B)\subset A
 \}$ is a fractional ideal of $B$.
 
 **Proof.** Denote it by $I$. We must prove that it is finitely generated over $A$. Take a $A$-basis $(w_i)$ of $B$ and $(w_i^\vee)$ the dual basis of $(\mathrm{Tr}
@@ -294,7 +294,7 @@ Therefore $\mathfrak{q}^{1-e}\subset D(B/A)^{-1}$, so $\mathfrak{q}^{e-1}$ divid
 
 So $\mathfrak{q}$ is ramified i.e. $e\geq 2$ implies $\mathfrak{q}$ devides $D(B/A)$.
 
-Conversely suppose that $e=1$, then $B/\mathfrak{p}B$ is a field, and is a finite extension of $A/\mathfrak{p}$. Then $\mathfrak{q}$ divides D(B/A) implies $\mathrm{Tr}
+Conversely suppose that $e=1$, then $B/\mathfrak{p}B$ is a field, and is a finite extension of $A/\mathfrak{p}$. Then $\mathfrak{q}$ divides $D(B/A)$ implies $\mathrm{Tr}
 _
 {L/K}(\mathfrak{q}^{-1})=\mathrm{Tr}
 _
