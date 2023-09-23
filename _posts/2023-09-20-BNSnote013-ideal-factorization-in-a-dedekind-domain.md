@@ -62,7 +62,7 @@ This provides another point of view of the Legendre symbol, we will use it to pr
 
 # Part II, Ramifications
 
-我们用更局部的办法简单看一下差不多的内容,但是这样的办法可以走得更远.其中包含一个主要的结果是(沿用上个pdf里面的记号)$p\mid d_K\ \Leftrightarrow\ p$ ramifies,它作为这一部分Th8和Cor10的推论.顺便这里面很多术语很难不让人想到Riemann surfaces,也许我们以后可以看到它在那里的类似物.
+我们用更局部的办法简单看一下差不多的内容,但是这样的办法可以走得更远.其中包含一个主要的结果是(沿用上个pdf里面的记号)$p\mid d_K$ $\Leftrightarrow$ $p$ ramifies,它作为这一部分Th8和Cor10的推论.顺便这里面很多术语很难不让人想到Riemann surfaces,也许我们以后可以看到它在那里的类似物.
 
 这部分证明有些是我自己写的,因为我觉得书上的我没理解或者我觉得他没说清楚,如果发现我写错了敬请指正.
 
@@ -89,13 +89,14 @@ $$K_\mathfrak{p}\otimes_K L\to \prod_{i=1}^g L_\mathfrak{q_i},\ x\otimes y\mapst
 
 Clearly it is a monomorphism. To show that it is a surjection, take $(w_i)_{1\le i\le n}$ a integral basis of $B$, it suffices to show that elements of the form $x\iota(w_i)$ generate the whole space.
 
-In applying $\varprojlim_n -/\mathfrak{p}^n -$ on $A^{\oplus n}\xrightarrow{\thicksim} B$ we get an isomorphism $\mathcal{O}_\mathfrak{p}^{\oplus n}\xrightarrow{\thicksim} \prod_{i=1}^g \mathcal{O}_\mathfrak{q_i}$ and the statement follows. $\square$
+In applying $\varprojlim_n -/\mathfrak{p}^n -$ on $A^{\oplus n}\xrightarrow{\thicksim} B$ we get an isomorphism $\mathcal{O}_
+\mathfrak{p}^{\oplus n}\xrightarrow{\thicksim} \prod_{i=1}^g \mathcal{O}_\mathfrak{q_i}$ and the statement follows. $\square$
 
 **Cor2.** The valuation ring $\mathcal{O}_\mathfrak{q}$ of $L_\mathfrak{q}$ is the integral closure of $\mathcal{O}_\mathfrak{p}.$
 
 **Proof.** It suffices to show that $\mathcal{O}_\mathfrak{q}$ is finitely generated over $\mathcal{O}_\mathfrak{p}$. En effet the isomorphism in the proof of Prop1 embed $\mathcal{O}_\mathfrak{q}$ into a free $\mathcal{O}_\mathfrak{p}$-Module. $\square$
 
-**Prop3.** Choose $\theta \in \B$ s.t. $L=K(\theta)$ and suppose that its minimal polynomial is $F(X)$. The factorisation of $F(X)$ over $K_\mathfrak{p}$ is $F(X)=\prod_{i=1}^h F_i(X).$ Then $h=g$ and 
+**Prop3.** Choose $\theta \in B$ s.t. $L=K(\theta)$ and suppose that its minimal polynomial is $F(X)$. The factorisation of $F(X)$ over $K_\mathfrak{p}$ is $F(X)=\prod_{i=1}^h F_i(X).$ Then $h=g$ and 
 $K_\mathfrak{p}[T]/(F_i(T))\simeq L_\mathfrak{q_i}$ (except the order of $F_i$).
 
 **Proof.** Let $\tau$ be a $K$-embedding of $L$ in the algebraic closure of $K_\mathfrak{p}/(F)$. Clearly $\tau$ sends a root of $F_i$ to another root of $F_i$. Extend $\tau$ to $L_\mathfrak{q_i}$ then $\tau$ becomes a $K_\mathfrak{p}$-embedding, whose image is contained in exactly one $K_\mathfrak{p}/(F_j)$.
@@ -112,15 +113,16 @@ $$[L:K]=\sum_{i=1}^g[L_\mathfrak{q_i}:K_\mathfrak{p}];$$
 
 $$\mathrm{N}_{L/K}=\prod_{i=1}^g \mathrm{N}_{L_\mathfrak{q_i}/K_\mathfrak{p}};$$
 
-$$\mathrm{Tr}_{L/K}=\sum_{i=1}^g \mathrm{Tr}_{L_\mathfrak{q_i}/K_\mathfrak{p}};$$
+$$\mathrm{Tr}_{L/K}=\sum_{i=1}^g \mathrm{Tr}_{L_\mathfrak{q_i}/K_\mathfrak{p}}.$$
+
 
 **Cor5.** The following propositions are equivalentes.
 
-1)$\mathfrak{p}$ splits completely in $L$;
+1) $\mathfrak{p}$ splits completely in $L$;
 
-2)$F(T)$ splits in $K_\mathfrak{p}$;
+2) $F(T)$ splits in $K_\mathfrak{p}$;
 
-3)$K_\mathfrak{p}\simeq L_\mathfrak{q_i}$ for all $i$.
+3) $K_\mathfrak{p}\simeq L_\mathfrak{q_i}$ for all $i$.
 
 **Prop6.** $e(\mathfrak{p},\mathfrak{q})=e(\mathfrak{p}\mathcal{O}_\mathfrak{p},\mathfrak{q}\mathcal{O}_\mathfrak{q}),$ $f(\mathfrak{p},\mathfrak{q})=f(\mathfrak{p}\mathcal{O}_\mathfrak{p},\mathfrak{q}\mathcal{O}_\mathfrak{q}).$
 
@@ -134,17 +136,17 @@ $[L:K]=\mathrm{dim}_{\mathcal{O}_\mathfrak{p}/\mathfrak{p}\mathcal{O}_\mathfrak{
 
 **Lemma.** $\{\beta\in L\mid \mathrm{Tr}_{L/K}(\beta B)\subset A\}$ is a fractional ideal of $B$.
 
-**Proof.$$ Denote it by $I$. We must prove that it is finitely generated over $A$. Take a $A$-basis $(w_i)$ of $B$ and $(w_i^\vee)$ the dual basis of $(\mathrm{Tr}_{L/K}(w_i-))$. Then $\mathrm{Tr}_{L/K}(\beta B) \subset A$ iff. $\mathrm{Tr}_{L/K}(\beta w_i) \in A$ for all $i$.
+**Proof.** Denote it by $I$. We must prove that it is finitely generated over $A$. Take a $A$-basis $(w_i)$ of $B$ and $(w_i^\vee)$ the dual basis of $(\mathrm{Tr}_{L/K}(w_i-))$. Then $\mathrm{Tr}_{L/K}(\beta B) \subset A$ iff. $\mathrm{Tr}_{L/K}(\beta w_i) \in A$ for all $i$.
 
 Suppose that $\beta=\sum_i x_iw_i$, $x_i\in K$. Then $\mathrm{Tr}_{L/K}(\beta w_i^\vee)=\mathrm{Tr}_{L/K}(x_iw_iw_i^\vee)nx_i\in A$ $\Leftrightarrow$ $\beta \in\sum_i Aw_i.$ Hence $I\subset \sum_i Aw_i$. $\square$
 
 **Def.** The different of $B$ in $A$ $$D(B/A):=\{\beta\in L\mid \mathrm{Tr}_{L/K}(\beta B)\subset A\}^{-1}.$$
 
-**Th8.$ Suppose that $K$ is an algebraic number field. Let $\mathfrak{q}$ be a prime ideal of $B$. Then $\mathfrak{q}$ ramifies with regard of $L/K$ iff. $\mathfrak{q}$ divides $D(B/A)$.
+**Th8.** Suppose that $K$ is an algebraic number field. Let $\mathfrak{q}$ be a prime ideal of $B$. Then $\mathfrak{q}$ ramifies with regard of $L/K$ iff. $\mathfrak{q}$ divides $D(B/A)$.
 
 We prove this theorem by reduction to local situation.
 
-**Proof.** **Step1** For any $d\in\mathbb{N}$ take $a\in \mathfrak{q}^d\backslash{0}$. Consider the commutative diagram
+**Proof.** **Step1** For any $d\in\mathbb{N}$ take $a\in \mathfrak{q}^d\backslash\{0\}$. Consider the commutative diagram
 
 \begin{tikzcd}
 
