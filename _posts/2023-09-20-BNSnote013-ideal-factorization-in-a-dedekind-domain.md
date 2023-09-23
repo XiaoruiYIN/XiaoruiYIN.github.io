@@ -85,9 +85,9 @@ By CRT we have $B/\mathfrak{p}^n B\simeq \prod_{i=1}^g B/\mathfrak{q_i}^e_i n $.
 
 **Proof.** We show that
 
-$$K_\mathfrak{p}\otimes_K L\to \prod_{i=1}^g L_\mathfrak{q_i},\ x\otimes y\mapsto x\ita(y)$$ where $\ita$ is the diagonal embedding of $L$ in $\prod_{i=1}^g L_\mathfrak{q_i}$ is an isomorphism. 
+$$K_\mathfrak{p}\otimes_K L\to \prod_{i=1}^g L_\mathfrak{q_i},\ x\otimes y\mapsto x\iota(y)$$ where $\iota$ is the diagonal embedding of $L$ in $\prod_{i=1}^g L_\mathfrak{q_i}$ is an isomorphism. 
 
-Clearly it is a monomorphism. To show that it is a surjection, take $(w_i)_{1\le i\le n}$ a integral basis of $B$, it suffices to show that elements of the form $x\ita(w_i)$ generate the whole space.
+Clearly it is a monomorphism. To show that it is a surjection, take $(w_i)_{1\le i\le n}$ a integral basis of $B$, it suffices to show that elements of the form $x\iota(w_i)$ generate the whole space.
 
 In applying $\varprojlim_n -/\mathfrak{p}^n -$ on $A^{\oplus n}\xrightarrow{\thicksim} B$ we get an isomorphism $\mathcal{O}_\mathfrak{p}^{\oplus n}\xrightarrow{\thicksim} \prod_{i=1}^g \mathcal{O}_\mathfrak{q_i}$ and the statement follows. $\square$
 
