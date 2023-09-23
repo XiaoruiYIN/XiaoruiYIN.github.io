@@ -205,11 +205,12 @@ _
 \mathfrak{q}=\sum_{i=0}^{e-1}f=ef.$ $\square$
 
 
-**Lemma.** $\{
+**Lemma.** $$\{
 \beta\in L\mid \mathrm{Tr}
 _
 {L/K}(\beta B)\subset A
-\}$ is a fractional ideal of $B$.
+\}$$
+is a fractional ideal of $B$.
 
 **Proof.** Denote it by $I$. We must prove that it is finitely generated over $A$. Take a $A$-basis $(w_i)$ of $B$ and $(w_i^\vee)$ the dual basis of $(\mathrm{Tr}
 _
@@ -231,10 +232,13 @@ iw
 _
 i^\vee)nx
 _
-i\in A$ $\Leftrightarrow$ $\beta \in\sum_i Aw_i.$ Hence $I\subset \sum_i Aw_i$. $\square$
+i\in A$ $\Leftrightarrow$ $\beta \in\sum_i Aw_i.$ 
+Hence 
+$I\subset \sum_i Aw_i$. $\square$
 
 
 **Def.** The different of $B$ in $A$ 
+
 $$D(B/A):=\{
 \beta\in L\mid \mathrm{Tr}
 _
