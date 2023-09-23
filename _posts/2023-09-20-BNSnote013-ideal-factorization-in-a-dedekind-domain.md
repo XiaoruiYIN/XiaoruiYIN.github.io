@@ -74,7 +74,8 @@ $e(\mathfrak{p},\mathfrak{q})$ stands for the ramification index of $\mathfrak{p
 
 **Recall.** 1) $B$ is finitely generated over $A$;
 
-2) $A/\mathfrak{p}^n \simeq \mathcal{O}_\mathfrak{p}/\mathfrak{p}\mathcal{O}_\mathfrak{p}$;
+2) $A/\mathfrak{p}^n \simeq \mathcal{O}_
+\mathfrak{p}/\mathfrak{p}\mathcal{O}_\mathfrak{p}$;
 
 3) $\varprojlim_n A/\mathfrak{p}^n \simeq \mathcal{O}_\mathfrak{p}.$
 
