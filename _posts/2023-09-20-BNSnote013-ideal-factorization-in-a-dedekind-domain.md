@@ -293,7 +293,7 @@ _
 _
 {L/K}(B/\mathfrak{p}B)=0$ and it follows that the extension $B/\mathfrak{p}B\mid A/\mathfrak{p}$ is not separable, a contradiction. $\square$
 
-关于上面的step1首先是我觉得有 $A/I\simeq I^{-1}/A$ .另外关于后面两列的同构原书上写的是过遍全部素理想,然后一开始我没有意识到这其实是个有限乘积于是没想明白,就跑去问了同学和老师.善良的老师还告诉我老百姓我们可以考虑一个更加奢侈的版本 $\mathbb{Q}\otimes_\mathbb{Z}\hat{\mathbb{Z}}/\hat{\mathbb{Z}}\simeq \mathbb{Q}/\mathbb{Z}$ (看起来是汇集了所有素数信息的一个无穷的东西,但实际上这个同构也差不多是CRT给的).
+关于上面的step1首先是我觉得有$A$-模同构 $A/I\simeq I^{-1}/A$ ，这个对主理想明显对，需要2个生成元的情况我有点拿不准. 另外关于后面两列的同构原书上写的是过遍全部素理想,然后一开始我没有意识到这其实是个有限乘积于是没想明白,就跑去问了同学和老师.善良的老师还告诉我老百姓我们可以考虑一个更加奢侈的版本 $\mathbb{Q}\otimes_\mathbb{Z}\hat{\mathbb{Z}}/\hat{\mathbb{Z}}\simeq \mathbb{Q}/\mathbb{Z}$ (看起来是汇集了所有素数信息的一个无穷的东西,但实际上这个同构也差不多是CRT给的).
 
 **Prop9.** $L=K(\theta)$, $\theta$ integral, $F$ its minimal polynomial. Then $$\{\beta\in L\mid \mathrm{Tr}_{L/K}(\beta A[\theta])\subset A\}=\frac{1}{F'(\theta)}A[\theta].$$
 
