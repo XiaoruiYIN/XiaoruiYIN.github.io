@@ -372,13 +372,9 @@ In the following part we may assume that $L/K$ is a finite Galois extension.
 $$D
 _
 \mathfrak{q}=
-\
-{
+\{
 \sigma\in\mathrm{Gal}(L/K)\mid\sigma\mathfrak{q}=\mathfrak{q}
-\
-}
-.
-$$
+\}$$
 
 **Prop12.** $L_\mathfrak{q}/K_\mathfrak{p}$ Galois. Isomorphism $\mathrm{Gal}(L_\mathfrak{q}/K_\mathfrak{p})\to D
 _
