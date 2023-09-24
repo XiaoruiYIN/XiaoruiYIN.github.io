@@ -1,0 +1,139 @@
+
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5c2eS66UunxjES8Ea41nJ8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+最近的主线任务是复习一下Riemann曲面的Riemann-Roch定理,我也不得不承认我虽然大概抄了一些书了但是我完全不敢说理解这个定理.所以我再来把那个定理的证明用 $\LaTeX$ 抄写一遍.文章篇幅和我自己精力的考虑会默认一些看上去比较对或者是我自己觉得不难或者我觉得实在太难的东西,并且不打算特别严肃地叙述一些定义和基本性质.
+
+
+> References: R. Narasimhan,Compact Riemann Surfaces; 伍鸿熙,紧黎曼曲面引论; John M. Lee, Introduction to Smooth Manifolds.
+
+> 我这里参考的两本书都用硬分析的Hodge来证明RR, 另有一本Otto Forster, Lectures on Riemann Surfaces走了看上去更加袋鼠的路线. 就这个定理本身而言, 「Riemann曲面上具有指定形状的极点的亚纯函数的存在性」就像是Mittag-Leffler那样我觉得看上去更像一个很分析的结果. 听说Phillip A. Griffiths有本代数曲线关于这个也很好,可惜它不是springer,在这里买(甚至ebook)定价有点幽默.
+
+我们还是交代一下记号们.固定一个genus为 $g$ 的紧Riemann曲面 $M$, 它的chart是 $(W
+_
+\alpha,z
+_
+\alpha)$, 它上面所有除子(divisor)放在一起的加法群记作 $\mathrm{Div}(M)$. 同态 $\mathrm{deg}: \mathrm{Div}(M)\to \mathbb{Z}$ 是算这些系数的和.
+亚纯函数域 $\mathfrak{M}(M)$. $f\in \mathfrak{M}(M)$ 决定的除子记作 $\mathrm{div}(f)$, 不致混淆时就用 $(f)$ , $\mathrm{div}(f)$ 也是 $\mathfrak{M}(M)$ 到除子群的同态; 亚纯微分记号一样.
+
+又对于除子 $D$ 定义
+
+ $$L(D)=\{
+f\in\mathrm{Div}(M)\mid (f)+D\geq 0 \};$$
+
+　$$\mathrm{dim}L(D):=l(D).$$
+
+两个除子等价是说相差一个亚纯函数,等价类不致混淆时候不作区分,显然亚纯微分的除子都是等价的,记作 $K$.
+
+我们的目标是
+
+**Riemann-Roch Theorem.** $M$ is a compact Riemman surface, then for all $D\in\mathrm{Div}(M)$ we have 
+
+$$l(D)-l(K-D)=\mathrm{deg}(D)+1-g.$$
+
+# 1. Line Bundles
+
+在这一部分,我们要指出每一个除子都给出一个全纯线丛,然后就可以用线丛的语言重新解释 $L(D)$ 和 $L(K-D)$ ,便于我们算同调.
+
+**Def.** $M$ 上的一个全纯线丛是指全纯映射 $\pi:L\to M$,其中
+
+1) $L$是二维复流形;
+
+2) 每一个 $W
+_
+\alpha$ , 指定共形等价 $\psi
+_
+\alpha$ 使得如下图表交换;
+
+<!-- https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHBpXnstMX0oV19cXGFscGhhKSJdLFsyLDAsIldfXFxhbHBoYVxcdGltZXNcXG1hdGhiYntDfSJdLFsxLDEsIldfXFxhbHBoYSJdLFswLDEsIlxccHNpX1xcYWxwaGEiXSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMCwyLCJcXHBpIl1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMyxbMCwwLCJcXHBpXnstMX0oV19cXGFscGhhKSJdLFsyLDAsIldfXFxhbHBoYVxcdGltZXNcXG1hdGhiYntDfSJdLFsxLDEsIldfXFxhbHBoYSJdLFswLDEsIlxccHNpX1xcYWxwaGEiXSxbMSwyLCIiLDAseyJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJlcGkifX19XSxbMCwyLCJcXHBpIl1d&embed" width="250" height="250" style="border-radius: 8px; border: none;"></iframe>
+
+3)对于 $W
+_
+\alpha \cap W
+_
+\beta\neq\empty$,
+有全纯的连接函数
+
+$f
+_
+{\alpha \beta}:
+$W
+_
+\alpha\cap W
+_
+\beta\to \mathbb{C}^\times$ satisfying
+
+$$\psi
+_
+\alpha\circ \psi
+_
+\beta^{-1}(x,t)=(x,
+$f
+_
+{\alpha \beta}(t)).$$
+
+
+把(2)限制在一个单点上面我们看到每一根纤维 $\pi^{-1}(x)$ 就装备了线性空间结构.
+
+**Prop.** $$f
+_
+{\alpha \beta}=1;$$
+
+$$f
+_
+{\alpha \beta}f
+_
+{\beta\alpha}=1;$$
+
+$$f
+_
+{\alpha \beta}f
+_
+{\beta \gamma}f
+_
+{\gamma\alpha}=1.$$
+
+
+**Lemma.** 给定一族满足了上面Prop的性质的 $f
+_
+{\alpha \beta}$ 足以唯一地确定 $M$ 上一个全纯鲜葱. 于是之后的线丛我们都以这种形式给出.
+
+
+**Def.** 切丛是指由 $\frac{\mathrm{d}z
+_
+\alpha}{\mathrm{d}z
+_
+\beta}$ 给出的全纯线丛; 余切丛是指 $\frac{\mathrm{d}z
+_
+\beta}{\mathrm{d}z
+_
+\alpha}$ 给出的全纯线丛.
+
+**Def.** 两个全纯鲜葱同构,如果存在一个共形等价使得应该交换的图表交换.
+
+**Lemma.** $M$ 上两个全纯鲜葱 $L$ 和 $L'$ 分别由 $f
+_
+{\alpha \beta}$ 和 $$g
+_
+{\alpha \beta}$ 给出. 那么它们同构当且仅当存在一族 $h
+_
+\alpha$
+满足 $$f
+_
+{\alpha \beta}(x)=\frac{1}{h
+_
+{\beta}(x)}
+g
+_
+{\alpha \beta}(x)
+h
+_
+{\beta}(x).$$
+
+于是我们可以良定义 $L\otimes L'$ 为由 $f
+_
+{\alpha \beta}g
+_
+{\alpha \beta}$
+决定的鲜葱. 这样 $M$ 上的全部全纯鲜葱的等价类对于 $\otimes$ 形成Abel群, 它的单位元是平凡鲜葱(也就是连接函数都取1)的等价类.
