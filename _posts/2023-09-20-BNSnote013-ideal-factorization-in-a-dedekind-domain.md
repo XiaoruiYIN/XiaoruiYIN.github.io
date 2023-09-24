@@ -250,39 +250,8 @@ We prove this theorem by reduction to local situation.
 
 **Proof.** **Step1** For any $d\in\mathbb{N}$ take $a\in \mathfrak{q}^d\backslash\{0\}$. Consider the commutative diagram
 
-\begin{tikzcd}
-
-\mathfrak{q}^{-d}/B 
-\arrow
-[d, "
-~
-"] \arrow
-[rr, hook]             &  & a^{-1}B/B 
-\arrow[d, "
-~
-"] 
-\arrow[rr, $\mathrm{Tr}
-_
-{L/K}]              
-&  & a^{-1}A/A \arrow[d, "
-~
-"]    
-\\
-\mathfrak{q}^{-d}\mathcal{O}
-_
-\mathfrak{q}/\mathcal{O}
-_
-\mathfrak{q} \arrow[rr] &  & \prod a^{-1}\mathcal{O}
-_
-\mathfrak{q'}/\mathcal{O}
-_
-\mathfrak{q'} \arrow[rr] &  & \prod  a^{-1}\mathcal{O}
-_
-\mathfrak{p'}/\mathcal{O}
-_
-\mathfrak{p'}
-
-\end{tikzcd}
+<!-- https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhmcmFre3F9XnstZH0vQiJdLFsyLDAsImFeey0xfUIvQiJdLFs0LDAsImFeey0xfUEvQSJdLFsyLDIsIlxccHJvZCDCoGFeey0xfVxcbWF0aGNhbHtPfV9cXG1hdGhmcmFre3AnfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3twJ30iXSxbMCwyLCJcXG1hdGhmcmFre3F9XnstZH1cXG1hdGhjYWx7T31fXFxtYXRoZnJha3txfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3txfSJdLFs0LDIsIlxccHJvZCDCoGFeey0xfVxcbWF0aGNhbHtPfV9cXG1hdGhmcmFre3AnfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3twJ30iXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIlxcbWF0aHJte1RyfV97TC9LfSJdLFswLDQsIlxcc2ltIl0sWzIsNSwiXFxzaW0iXSxbMSwzLCJcXHNpbSJdLFs0LDMsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNV1d -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG1hdGhmcmFre3F9XnstZH0vQiJdLFsyLDAsImFeey0xfUIvQiJdLFs0LDAsImFeey0xfUEvQSJdLFsyLDIsIlxccHJvZCDCoGFeey0xfVxcbWF0aGNhbHtPfV9cXG1hdGhmcmFre3AnfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3twJ30iXSxbMCwyLCJcXG1hdGhmcmFre3F9XnstZH1cXG1hdGhjYWx7T31fXFxtYXRoZnJha3txfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3txfSJdLFs0LDIsIlxccHJvZCDCoGFeey0xfVxcbWF0aGNhbHtPfV9cXG1hdGhmcmFre3AnfS9cXG1hdGhjYWx7T31fXFxtYXRoZnJha3twJ30iXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDIsIlxcbWF0aHJte1RyfV97TC9LfSJdLFswLDQsIlxcc2ltIl0sWzIsNSwiXFxzaW0iXSxbMSwzLCJcXHNpbSJdLFs0LDMsIiIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNV1d&embed" width="1011" height="432" style="border-radius: 8px; border: none;"></iframe>
 
 The products run over all (finitely many) prime ideals containg $a$. The isomorphisms is given by CRT.
 
