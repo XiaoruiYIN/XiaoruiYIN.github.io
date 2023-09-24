@@ -24,7 +24,7 @@ See this [<font color="blue">PDF file</font>](https://xiaoruiyin.github.io/pdff/
 
 The proof of the following theorem is missing in the beamer. 
 
-**Th(Dedekind)**. $p$ est un entier premier ne divisant pas l'indice of $\mathbb{Z}[\theta]$ ,$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
+**Th(Dedekind)**. $p$ est un entier premier ne divisant pas l'indice de $\mathbb{Z}[\theta]$ ,$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
     Alors la factorisation de l'idéal $(p)$ est $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
 
 **Proof(sketch)**. Dénote $\mathfrak{p}_k=(p,F_k(\theta))$. 
@@ -369,12 +369,9 @@ $\mathrm{Gal}(L/K)\to \mathrm{Gal}(E/F).$ By the finiteness this is a bijection.
 In the following part we may assume that $L/K$ is a finite Galois extension.
 
 **Def.** Decomposition group of $\mathfrak{q}$
-$$D
-_
-\mathfrak{q}=
-\{
-\sigma\in\mathrm{Gal}(L/K)\mid\sigma\mathfrak{q}=\mathfrak{q}
-\}$$
+
+$$D_\mathfrak{q}:=\{
+\sigma\in\mathrm{Gal}(L/K)\mid\sigma\mathfrak{q}=\mathfrak{q}\}$$
 
 **Prop12.** $L_\mathfrak{q}/K_\mathfrak{p}$ Galois. Isomorphism $\mathrm{Gal}(L_\mathfrak{q}/K_\mathfrak{p})\to D
 _
