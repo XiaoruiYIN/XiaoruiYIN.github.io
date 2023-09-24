@@ -24,10 +24,10 @@ See this [<font color="blue">PDF file</font>](https://xiaoruiyin.github.io/pdff/
 
 The proof of the following theorem is missing in the beamer. 
 
-**Th(Dedekind)**. $p$ est un entier premier ne divisant pas l'indice de $\mathbb{Z}[\theta]$ ,$\theta$ est integral sur $\mathbb{Q}$ ayant le polynôme minimal $F(X)$, son image canonique dans $\mathbb{Z}/p\mathbb{Z}$ est factorisé dans un produit de polynômes irréductibles $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
-    Alors la factorisation de l'idéal $(p)$ est $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
+**Th(Dedekind)**. $p$ is a rational prime that does not divide the index of $\mathbb{Z}[\theta]$ where $\theta$ is integral over $\mathbb{Q}$, its minimal polynomial $F(X)$, the factorisation of the canonical image of $F$ in $\mathbb{Z}/p\mathbb{Z}$ is $\widetilde{F}=\prod_{k=1}^g\widetilde{F_k}^{e_k}$.
+    Then the factorisation of the ideal $(p)$ is $(p)=\prod_{k=1}^g(p,F_k(\theta))^{e_k}$.
 
-**Proof(sketch)**. Dénote $\mathfrak{p}_k=(p,F_k(\theta))$. 
+**Proof(sketch)**. Denote $\mathfrak{p}_k=(p,F_k(\theta))$. 
 
 _Step1_  Mq $\mathfrak{p}_k$ est un idéal propre, donc $\mathfrak{p}_k$ est maximal.
 > sinon $(p)$ et $(F_k(\theta))$ sont premiers entre eux.
