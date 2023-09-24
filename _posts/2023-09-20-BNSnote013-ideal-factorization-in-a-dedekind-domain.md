@@ -355,29 +355,38 @@ _
 
 The residue field of $L(\alpha)$ is $E[T]/(f
 _
-1)=E$, so $e(L(\alpha)/K)=e(L/K)$, $f(L(\alpha)/K)=f(L/K)$. Therefore $[L(\alpha):L]=[L(\alpha):K]/[L:K]=1$ i.e. $L=L(\alpla).$ Particularly $K(\alpha)\subset L.$ Again we have $[K(\alpha):K]\geq [F(\beta):F]=[E:F]=[L:K]$, so $K(\alpha)=L$.
+1)=E$, so $e(L(\alpha)/K)=e(L/K)$, $f(L(\alpha)/K)=f(L/K)$. Therefore $[L(\alpha):L]=[L(\alpha):K]/[L:K]=1$ i.e. $L=L(\alpha).$ Particularly $K(\alpha)\subset L.$ Again we have $[K(\alpha):K]\geq [F(\beta):F]=[E:F]=[L:K]$, so $K(\alpha)=L$.
 
 iii) $[E:F]=\mathrm{deg}(f)=[L:K].$
 
-iv) When $L=K(\alpha)$ is a Galois extension we have $L=K[T]/(f).$ and $E=F[T]/(f)$ so $E/F$ is Galois. Therefore $\# \mathrm{Gal}(L/K)=\# \mathrm{Gal}(E/F)$. Viewing them as a subgroup of the permutation group of the roots of $f$ in $L$ and $E$, we get a natural monomorphism 
+iv) When $L=K(\alpha)$ is a Galois extension we have $L=K[T]/(f).$ and $E=F[T]/(f)$ so $E/F$ is Galois. Therefore 
+$\mathrm{Card}(\mathrm{Gal}(L/K))=\mathrm{Card}(
+\mathrm{Gal}(E/F))$. Viewing them as a subgroup of the permutation group of the roots of $f$ in $L$ and $E$, we get a natural monomorphism 
 $\mathrm{Gal}(L/K)\to \mathrm{Gal}(E/F).$ By the finiteness this is a bijection. $\square$
 
 最后我们看一下Galois的情况就结束,剩下的有机会再写.
 
 In the following part we may assume that $L/K$ is a finite Galois extension.
 
-**Def.** Decomposition group of$\mathfrak{q}$
+**Def.** Decomposition group of $\mathfrak{q}$
 $$D
 _
-\mathfrak{q}=\{\sigma\in\mathrm{Gal}(L/K)\mid\sigma\mathfrak{q}=\mathfrak{q}\}.$$
+\mathfrak{q}=
+\
+{
+\sigma\in\mathrm{Gal}(L/K)\mid\sigma\mathfrak{q}=\mathfrak{q}
+\
+}
+.
+$$
 
-**Prop12.** $L_\mathfrak{q}/K_\mathfrak{p}$ Galois. Isomorphism $\mathrm{Gal}(L_\mathfrak{q}/K_\mathfrak{p})\to\D
+**Prop12.** $L_\mathfrak{q}/K_\mathfrak{p}$ Galois. Isomorphism $\mathrm{Gal}(L_\mathfrak{q}/K_\mathfrak{p})\to D
 _
 \mathfrak{q}, \sigma\mapsto\sigma\mid
 _
 L.$
 
-**Prop13.** $\mathrm{Gal}$ acts transitively on prime ideals of $B$ lying over $\mathfrak{p}$.
+**Prop13.** $\mathrm{Gal}(L/K)$ acts transitively on prime ideals of $B$ lying over $\mathfrak{p}$.
 
 **Proof.** Denote $X$ the set of prime ideals of $B$ lying over $\mathfrak{p}$. We must show that for all $\mathfrak{q}$ we have $\mathrm{Gal}(L/K)\mathfrak{q}=X.$ Clearly $\mathrm{Gal}(L/K)\mathfrak{q}\subset X.$
 We have $$[L:K] = \sum
@@ -388,9 +397,9 @@ _
 _
 \mathfrak{p}]$$
 and
-$$[L:K]=\#\mathrm{Gal}(L/K)=\#(\mathrm{Gal}(L/K)\mathfrak{q})\#D
+$$[L:K]=\mathrm{Gal}(L/K)=\mathrm{Card}(\mathrm{Gal}(L/K)\mathfrak{q})\mathrm{Card}(D
 _
-\mathfrak{q}=\#(\mathrm{Gal}(L/K)\mathfrak{q})[L
+\mathfrak{q})=\mathrm{Card}(\mathrm{Gal}(L/K)\mathfrak{q})[L
 _
 \mathfrak{q}:K
 _
@@ -403,7 +412,7 @@ _
 _
 \mathfrak{p}]$$
 
-Hence $\#(\mathrm{Gal}(L/K)\mathfrak{q})=#X.$ $\square$
+Hence $\mathrm{Card}(\mathrm{Gal}(L/K)\mathfrak{q})=\mathrm{Card}( X).$ $\square$
 
 顺便这里面很多术语很难不让人想到Riemann surfaces,也许我们以后可以看到它在那里的类似物.
 
