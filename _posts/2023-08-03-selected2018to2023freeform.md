@@ -122,6 +122,11 @@ math: true
 
 <p>Digital Commandos无疑是写得最为直白而且好蹦的一派,这首歌也是这一特点的一个代表.他给我留下最深刻的印象还是被我吹得太多的Science Of Sound.</p>
 
+22.
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/49nOqYozRFtxk05PlOKHuq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<p>这能不能归入freeform我倒是不知道,但是编的确实是非常好的!</p>
+
 <p>如果之后还有发现非常喜欢的freeform也不会更新进来,但也许可以尝试做一个类似的经典作品的列表.最后建议大家多听stamina.再见.</p>
 
 <p>推销一下自己以前做的一个bootleg [<font color="blue">LV.4-PHANTASMA(bootleg by 555ame)</font>](http://t.cn/A6NiQzJ1)</p>
