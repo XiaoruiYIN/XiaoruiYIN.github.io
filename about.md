@@ -15,10 +15,9 @@ permalink: /about/
 
 Recently focus on number theory and freeform hardcore.
 
-I have a 🐰 whose name is 豆. You can check some of his photos on <a href="https://www.instagram.com/rorange30303/">🔗my instagram</a>.
+I have a 🐰 whose name is 豆. I post some of his photos on <a href="https://www.instagram.com/rorange30303/">🔗my instagram</a>.
 
 <a href="xiaoruiyin.github.io/d">🔗MoreAbout豆</a> (工事中)
 
-Member of ProjectBNS, an experimental project initiated by S.OKADA, Y.WU and X.YIN.
 
 <a href="xiaoruiyin.github.io/projectbns">🔗About ProjectBNS/ProjectBNSって何?</a> (工事中)
