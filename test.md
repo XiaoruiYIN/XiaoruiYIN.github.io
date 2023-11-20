@@ -9,7 +9,7 @@ permalink: /test/
 2023.11.20
 Paris, France
 
-# 更早的更新
+# 过去的更新
 
 2023.11.11
 Paris, France
@@ -26,5 +26,5 @@ Paris, France
 2023.09.20
 Paris, France
 
-2023.8.19
+2023.08.19
 Jiangsu, China
