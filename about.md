@@ -11,11 +11,11 @@ permalink: /about/
 
 **Language**: CN(Mothertongue)/FR(Niveau B2)/JP/EN
 
-**Contact**: <a href="mailto:rorange30303@outlook.com">rorange30303@outlook.com</a>
+**Contact**: <a href="mailto:rorange30303@outlook.com">📬rorange30303@outlook.com</a>
 
-Recently focus on number theory and freeform hardcore. 
+Recently focus on number theory and freeform hardcore.
 
-I have a 🐰 whose name is 豆. You can check some of his photos <a href="https://www.instagram.com/rorange30303/">here</a>.
+I have a 🐰 whose name is 豆. You can check some of his photos on my <a href="https://www.instagram.com/rorange30303/">🔗instagram</a>.
 
 <a href="xiaoruiyin.github.io/d">🔗MoreAbout豆</a> (工事中)
 
