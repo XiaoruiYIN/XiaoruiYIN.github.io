@@ -15,7 +15,7 @@ permalink: /about/
 
 Recently focuse on number theory and freeform hardcore. 
 
-I have a 🐰 whose name is 豆. You can check some of his photos <a href="www.instagram.com/rorange30303//projectbns">here</a>.
+I have a 🐰 whose name is 豆. You can check some of his photos <a href="www.instagram.com/rorange30303/">here</a>.
 
 <a href="xiaoruiyin.github.io/d">MoreAbout豆</a> (工事中)
 
