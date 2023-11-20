@@ -7,14 +7,18 @@ permalink: /about/
 
 # About
 
-## 雪山大福/X.YIN
+## YIN Xiaorui
 
-**Language**: CN(Mothertongue)/FR(Niveau B2)/EN/JP
+**Language**: CN(Mothertongue)/FR(Niveau B2)/JP/EN
 
-**Contact**: rorange30303@outlook.com; xiaorui.yin@outlook.fr
+**Contact**: <a href="mailto:rorange30303@outlook.com">
 
-Recently focused on number theory and freeform hardcore. 
+Recently focuse on number theory and freeform hardcore. 
 
-I love rabbits. I have a rabbit whose name is 豆.
+I have a 🐰 whose name is 豆. You can check some of his photos <a href="www.instagram.com/rorange30303//projectbns">here</a>.
 
-Member of project BNS, an experimental project initiated by S.OKADA, Y.WU and X.YIN.
+<a href="xiaoruiyin.github.io/d">MoreAbout豆</a> (工事中)
+
+Member of ProjectBNS, an experimental project initiated by S.OKADA, Y.WU and X.YIN.
+
+<a href="xiaoruiyin.github.io/projectbns">About ProjectBNS/ProjectBNSって何?</a> (工事中)
