@@ -5,7 +5,7 @@ description: Contact
 permalink: /contact/
 ---
 
-<a href="mailto:rorange30303@outlook.com">📬rorange30303@outlook.com</a>
+<a href="mailto:xiaorui.yin@outlook.fr">✉️r</a><a href="mailto:rorange30303@outlook.com">orange30303@outlook.com</a>
 
 <a href="https://www.weibo.com/rorange30303">🔗My Weibo</a>
 
