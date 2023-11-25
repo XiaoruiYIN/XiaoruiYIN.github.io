@@ -11,7 +11,7 @@ permalink: /about/
 
 **Language**: CN(Mothertongue)/FR(Niveau B2)/JP/EN
 
-**Contact**: <a href="mailto:rorange30303@outlook.com">📬rorange30303@outlook.com</a>
+
 
 Recently focus on number theory and freeform hardcore.
 
