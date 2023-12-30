@@ -1,0 +1,807 @@
+---
+date: 2023-12-30
+layout: post
+title: Atiyah-Macdonald 部分习题解答
+subtitle: 
+description: 
+image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/note019.jpg
+optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/img/note019.jpg
+category: Mathematics
+tags:
+  - Mathematics
+  - BNS
+author: X.YIN
+math: true
+---
+
+前情提要: 之前看这个书比较囫囵吞枣习题也没怎么写于是回来稍微处理一下. 习题难度比正文高些, 但万幸的是完全过不去的很少, 遇到我无法解决的困难的地方引用了一些stack exchange上面的回答, 在对应的地方都有标明. 我是觉得大部分我写了的题目都写到了能说服我自己的程度, 但是考虑到我令人感叹的水平有什么地方写错了也很正常, 所以如果真的有人闲的没事来检查我写的东西而且发现哪里写错了请随意地联系我并且指出.
+
+写这些的时候顺便把Bourbaki的1到4章过了一遍, 虽然几乎没有仔细检查任何证明; 这里面我没有写的题目都是可以在Bourbaki的正文里找到的(反过来不对).
+
+> <a href="https://dangtuanhiep.files.wordpress.com/2008/09/papaioannoua_solutions_to_atiyah.pdf" style="color: blue">G〇〇gle出来的一个也许可以参考的全部习题的solution</a>. 我并没有检查其中的大部分内容, 但是我看到了一些明显错误如4.6和7.4, 此外在我卡了很久的第8章以后这份解答写得也不够完备以至于没什么参考价值. 
+
+最近其余的计划是写个 Galois 理论有关的note, 一方面是最近打算开始看局部类域论, 另一方面看了往年 Sorbonne M1 的 Théorie de Galois 课讲义发现他作为一个 M1 课竟然花一门课的时间只讲一堆域扩张把有限Galois扩张定义好, 证明了有限情况的 Galois 对应, 然后解决尺规作图的可能性和高于五次方程的根式解这两个问题, 唯一可以说进阶一点的是在最后提了一嘴 Hilbert '90, 结果感觉不太想选这个课了(如果我明年还在这里). 但是虽然说不想选最后肯定还是要选, 就好像交换代数我觉得正常的一个 M1 交换代数的知识我应该都是没有问题的但是假如我不选它就会导致我的成绩单上永远没有这个东西. 
+
+一直有种想法是假如我会在不久的将来严肃地上一遍这个课那么我就暂时随便学到姑且够看自己想看的东西的程度就行, 反正不久的将来可以在有帮助的条件下把基础打扎实. 目前唯一这么做并感觉还凑合的是微分流形.
+ 
+虽然在之前的 LU3MA232 上半期的总结那篇笔记提到期末考前准备再写一篇这个课的总结, 但是公式量太恐怖于是现在决定放弃了, 还是直接背书吧.
+
+> 为了避免的混淆, 如无特殊说明我们希望表示多项式环或形式幂级数环时未定元一律使用大写字母来表示, 例如 $A[X,Y].$
+
+# Chapter 1
+
+> 前三题以及第5题都是直接的计算.
+
+**第4题**: 多项式环的 Jacobson radical 等于 Nilradical. 结合第2题的计算以及下面的引理可以立即解决: $x\in J(A) \Leftrightarrow 1-xy\in A^\times\text{ for all }y\in a.$
+
+**第6题**: Nil 总是含在 Jacobson 里面, 反过来的包含则是因为 Jacobson 里面不能有非零的幂等元, 因为 $1-x$ 可逆导致 $x^2=x$ 推出 $x=0$.
+
+**第7题**: 这个也是直接做. 设 $\mathfrak{m}$ 是个真包含 $\mathfrak{p}$ 的理想, 取 $x\in\mathfrak{m}\backslash\mathfrak{p}$ 并且 $x^n=x$, 由 $x^n-x\in\mathfrak{p}$ 会得到 $x^{n-1}-1\in\mathfrak{p}$ 从而 $1\in\mathfrak{m}.$ 
+
+**第8题**: 直接Zorn.
+
+**第9题**: 从右边往左边是简单的. 从左边往右边的话对于 $A$ 的理想 $\mathfrak{a}$ 有 
+$$\mathfrak{a}=\bigcap
+_
+{\mathfrak{a}\subset\mathfrak{p}}\mathfrak{p}.$$
+容易看到这个事情等价于 $\mathrm{Nil}(A/\mathfrak{a})=0$.
+
+> 10至12题都显然. 13没什么好说的. 14直接Zorn. 15往后是 $\mathrm{Spec}(A)$ 的一些基本的东西和一些被拆到看上去很follow definition的验证, 懒得写了(反正stacks都查得到.
+
+# Chapter 2
+
+> 前三题没什么好说的.
+
+**第4题**: 经典结论属于是. 回顾在 $A-\mathbf{Mod}$ 里面 $-\otimes M$ 总是右正合, 我们只需要检查左正合. 假设 $f:N\to P$ 是个单射, 如果 $M$ flat, 那么 $f\otimes \mathrm{id}
+_
+{M
+_
+i}: N\otimes M
+_
+i\to P\otimes M
+_
+i$ 作为 $f\otimes \mathrm{id}
+_
+{M}: N\otimes M\to P\otimes M$ 的限制一定单所以 $M
+_
+i$ flat. 反过来的情况直接利用典范的同构 $N\otimes M=\bigoplus\big(N\otimes M
+_
+i\big)$ 就好了. 第5题直接把 $A[X]$ 的分次结构写出来用这个结论就好.
+
+> 第6题没什么好说的.
+
+**第7题**: 关于 $\mathfrak{p}[X]$ prime 这一点直接计算像证明 Eisenstein 判别法那样就好. $\mathfrak{m}[X]$ 一般不是 maximal 的, 反例比如随便一个域.
+
+> 第8题没什么好说的.
+
+**第9题**: 也是经典. 我们把 $M^{'}$ 看作 $M$ 的 submodule, 设 $f:M\to M^{''},$ 取 $M^{'}$ 和 $M^{''}$ 的生成元 $(a
+_
+i)
+_
+{1\leq i leq m},$ $(b
+_
+i)
+_
+{1\leq i leq n},$ 然后在每个 $f^{-1}(b
+_
+i)$ 里面任取 $c
+_
+i$, 那么 $(a
+_
+i)
+_
+{1\leq i leq m}\cup(c
+_
+i)
+_
+{1\leq i leq n},$ 就生成 $M$. 
+
+**第10题**: 这个神秘的叙述意思是要用中山引理了. 希望证明 $N/u(M)=0$, 为此只需证明
+$\mathfrak{a}(N/u(M))=N/u(M).$ 左边被包含在右边是显然的, 右边被包含在左边: 对于 $y+u(M)\in N/u(M)$ 由 $\tilde{u}: M\to N/\mathfrak{a}N$ 满, 取 $x\in M$ 使得 $\tilde{u}(x)=y+\mathfrak{a}N$, 所以 $y-u(x)\in \mathfrak{a}N,$ 从而 $y+u(M)=y-u(x)+u(M)\in \mathfrak{a}(N/u(M)).$
+
+**第11题**: 这个第1问我不知道为什么直接不考虑两边的基, 但是他既然都这么提示了那就按照他的意思做了;
+第2问的话只需考虑事实 $A^n$ 不可能由少于 $n$ 个元素生成. 这个题目幽默的在于第3问, 他很神秘地在这边问是不是仍然对搞得像有什么反直觉的猫腻一样, 也比较容易让人想到自由群那样的事情(虽然那个不是Abel群).但是想来想去只感觉这好像没道理不对啊然后stack exchange上一搜它确实是对的. 当我读到下面的证明我觉得这个才是“最正确的”证明, 相比之下别的不够好(虽然实际上只是重新证了一遍Cayley-Hamilton), 所以就不自己写了.
+> Balazs Strenner (https://mathoverflow.net/users/11214/balazs-strenner), Atiyah-MacDonald, exercise 2.11, URL (version: 2010-12-01): https://mathoverflow.net/q/47846
+
+> ここまでは、ずとまよさんの歌を聴きながら書いていた。5年前からずとまよの歌を聴き始めたが、その時はまだそんなに多くの聴衆がいなかった。ハード系の音楽を聴き始めてから、これらの歌を聴かなくなった。デビュー初と比べると最新アルバムのgenreはずいぶん変わったような。。。
+
+> 第12题都给他提示完了. 其实跟9也差不多.
+
+**第13题**: 关于为什么 $g:y\mapsto 1\otimes y$ 是单的: 这样的事情在我写的mémoire里面全部被我写“显然”了, 在这里倒是可以写一下... $1\otimes y=1\otimes z$ 意味着全部 $B\times N$ 在 $A-\mathbf{Mod}$ 的双线性映射都不能区分这两个元素, 特别地 $p:b\otimes y\mapsto by$ 也不能, 所以 $y=z$. 因为 $p\circ g=\mathrm{id}$ 从这段也直接看出来 $g(N)$ 的确是个 $N
+_
+B$ 的直和因子.
+
+
+> 第15至20题是 direct limit 的概念以及验证这个和 tensor 交换, 没啥好写的. 21至23题是 follow definition 的.
+
+下面的部分很神秘因为他明明在正文部分对 $\text{Tor}$ 只字未提却在这里出习题, 找了些资料看看感觉完全不是就这么看看就能做他这几个题的程度, 所以等以后再说.
+
+# Chapter 3
+
+**第1题**. 如果有一个这样的 $s$ 的话, 对任何 $x/t\in S^{-1}M$ 会有 $x/t=sx/st=0/st=0.$ 反过来如果 $S^{-1}M=0,$ 取 $M$ 的生成元 $(x
+_
+i)
+_
+{1\leq i\leq n}$, 那么存在 $(x
+_
+i)
+_
+{1\leq i\leq n}\subset S$ 使得 $s
+_
+im
+_
+i=0$, 取 $s=\prod
+_
+{1\leq i\leq n}s
+_
+i$ 即可.
+
+**第2题**. 利用我们在第一章第4题那里提到的引理可以证明 $S^{-1}\mathfrak{a}$ 含在 $S^{-1}A$ 的 Jacobson 里面. 由于局部化对于理想的乘积的保持如果 $M=\mathfrak{a}M$ 那么 $S^{-1}M=S^{-1}\mathfrak{a}S^{-1}M,$ 根据中山引理这推出 $S^{-1}M=0,$ 再结合上一题就知道存在 $s\in S=1+\mathfrak{a}$ 使得 $sM=0.$
+
+**第3题**. 只需想明白两边的元素都长什么样子. 知道 $(ST)^{-1}A$ 里面的元素形如 $\frac a{st},$ $U$ 的元素形如 $\frac{t}{1}$ 从而 $U^{-1}S^{-1}A$ 元素形如 $\frac{a/s}{t/1}$. 不难验证 $\frac a{st} \mapsto\frac{a/s}{t/1}$ 是同构.
+
+**第4题**. 这个也只需要搞清楚两边元素长什么样子, 然后 $b/s \mapsto b/f(s)$ 就是同构.
+
+**第5题**.  假如有不为零的幂零元, 取含有 $\mathrm{Ann(Nil}(A))$ 的极大理想 $\mathfrak{m}$. 根据条件 $A
+_
+\mathfrak{m}$ 中不含幂零元, 也就是说 $(A\backslash \mathfrak{m})^{-1}\mathrm{Nil}(A)=\mathrm{Nil}(A
+_
+\mathfrak{m})=0,$ 根据第1题这说明存在 $s\notin\mathfrak{m}$ 使得 $s\mathrm{Nil}(A)=0,$ 与我们的定义矛盾.
+
+即便 $A$ 在每个局部都是整环它自己也不一定是整环, 反例比如 $\mathbb{Z}/6\mathbb{Z}$, 它的局部甚至是两个域.
+
+> 第6题是直接Zorn.
+
+**第7题**.  第1问从右往左显然, 从左往右的话我们只需验证 $A\backslash S$ 是全部和 $S$ 不交的素理想之并. 这个并被含在 $A\backslash S$ 里是显然的, 反方向的包含可以这么证: 对于 $x\notin S$, 由于 $S$ 是 saturated 我们得到 $xA\cap S=\varnothing$ (这一步就把 saturated 这个信息没有损失地用掉了).  因此 $A/xA$ 里 $S$ 的像是个不含 $0=xA$ 的乘法子集, 从而根据上一题会有一个 $A/xA$ 里的极大乘法子集 $T$ 含有它, 而且 $(A/xA)\backslash T$ 是 $A/xA$ 的一个极小的素理想. 这个素理想提升到 $A$ 里是一个含 $x$ 的素理想并且和 $S$ 不交. 第2问应该比较显然. 最后因为 $1+\mathfrak{a}$ 跟某个别的素理想 $\mathfrak{p}$ 有交的话会导致 $1\in\mathfrak{a+p},$ 所以它的 saturation 就是所有和 $\mathfrak{a}$ 互素的理想之并的补.
+
+**第8题**. 这题的论证意外地很标准. 1推2是因为这玩意和 $1/t$ 的逆像会乘起来是 $1.$ 2推3设 $(t/1)(a/b)=1$ 那么存在 $s\in S$ 使得 $sat=sb\in S.$ 3推4可以用从上面那个素理想的并的写法直接看出来. 4推5显然. 5推1的话要想证 $\varphi$ 是个双射我们只好在每个 $S^{-1}A$ 的局部证明它是双射. 根据本书Prop 3.11, $S^{-1}A$ 的素理想都是由 $A$ 的与 $S$ 不交的素理想  $\mathfrak{p}$  局部化得来的, 而根据题设这样的素理想也跟 $T$ 不交. 接下来在局部 $S^{-1}\mathfrak{p}$ 考虑对应的 $\varphi$ (为了避免太麻烦的记号这里姑且省略应当有的下标). $S^{-1}A$ 局部化之后的元素形如 $\frac{a/s}{x/s^{'}}$, $\varphi$ 把这样的元素打到 $0\in T^{-1}A$ 等于是说 $tax=0\in A$ 对某些 $t\in T,$ 又知道 $x,t\notin \mathfrak{p}$ 从而 $tx/1\notin S^{-1}\mathfrak{p}$ 而且这个元素乘上 $a/s$ 就把它变成 $0\in S^{-1}A$ 了, 所以上面那个局部化之后的元素是 $0$ 从而 $\varphi$ 是单的. 满是显然的.
+
+> 第9题纯follow definition懒得follow了. 后面的10和11看上去倒是有内容的, 但由于之前 absolutely flat 这个概念来自 $\text{Tor}$ 那里所以我只好跳过这边. 除去这个定义之外的题目大意是验证所有素理想都极大这个条件在 $\mathrm{Spec}(A)$ 上面表现为分离性, 这个事情本身没什么难的.
+
+**第12题**. 1到3问都没什么好说的; 第4问这个操作非常经典, 要证明 $M\to K\otimes
+_
+A M, x\mapsto 1\otimes x$ 的核是 $M$ 的 torsion 部分. 很明显后者是包含在核里面的, 我们只需证反过来的包含. 事实上考虑双线性映射 $K\times M \to S^{-1}M, (f,x)\mapsto fx$, 其中 $S$ 是 $A$ 的所有非零元, 假如 $1\otimes x=0,$ 那么 $x\in S^{-1}M$ 作为 $(1,x)$ 那个双线性映射的像就是 $0\in S^{-1}M$ i.e. 存在某个 $s\in S,$ $sx=0.$ 这个就是 torsion 的定义.
+
+> 第13和14题 follow definition. 15, 16题都给他提示完了.
+
+**第17题**. 这个题我不知道他说 $f$ flat 是什么意思, 但是直接理解为后面 $B$ 和 $C$ 的 flatness 似乎就 make sense. 这个事情就是 $-\otimes
+_
+B C$ 是个忠实的正合函子, 然后 $-\otimes
+_
+A C$ 是正合函子, 注意到对 $A$-module $M$ 我们有 $M\otimes
+_
+A B\otimes
+_
+B C=M\otimes
+_
+A C,$ 对于任何单射 $f: M\to N$ 根据 $-\otimes
+_
+A C$ 正合我们有 $f
+_C: M\otimes
+_A
+C\to N\otimes
+_
+A C$ 单. 把 $-\otimes
+_
+A C$ 视为复合, 根据第一个忠实且正合我们可以推出 $f
+_
+B$ 的核为 $0$, 也就是 $-\otimes
+_
+A B$ 正合.
+
+> 第19题完全 follow definition, 而且印象中可以在stacks project查到. 21题至29题应该都能在stacks上直接查到, 最后一题是那个意义不明的 absolutely flat 所以我不会写.
+
+**第20题**. 第1问是第16题. 第2问左边推右边显然, 反方向的反例: $\mathbb{Z}\to\mathbb{Z}/4\mathbb{Z}\times\mathbb{Q},n\mapsto (n+2\mathbb{Z},n)$. 右边的非零素理想只有一个而且没有办法被 $\mathbb{Z}$ 的素理想生成(注意这边环映射本身不能是单的).
+
+# Chapter 4
+
+**第1题**. 设 $\mathfrak{a}=\bigcap\mathfrak{p},$ 其中右边是一些 primary 的有限交. 我们不妨设取这些 primary ideal 各自的 radical 两两不同, 那么这些 $V(\mathfrak{p})$ 在 $\mathrm{Spec}(A/\mathfrak{a})$ 上面都是不可约的(把它们对应回 $\mathrm{Spec}(A)$ 的含 $\mathfrak{a}$ 素理想考虑).
+
+**第2题**. 在第1章第9题证明了这样的理想一定是一些素理想的交, 而 $\mathfrak{a}$ 的 associated prime 正是这些素理想当中最小的那些.
+
+> 第3题又做不了. 第4, 5题是直接验证.
+
+**第6题**. 这个题意外地略难, 答案是做不到. 注意到这个环没有非零的幂零元, 因此假如 $0$ 有 primary decomposition 的话, $0$ 是有限多个素理想(它的 associated prime)的交, 从而根据书上 Prop 4.7  $mathcal{C}(X)$ 里面的所有 zero divisor 就是这有限多个素理想的并. 但是考虑含有这些素理想的极大理想(有限个), 这些素理想的并当中的元素应当在这有限多个极大理想对应的有限多个点中的至少某一处取到 $0$, 由于我们的空间是无穷的, 我们可以选取一个具有无穷多零点且在上面这些点处都不取 $0$ 的函数(这一步如果简单地取 $X=[0,1]$ 就是数学分析, 在一般的情况下必须用 Urysohn Lemma), 这样的函数总是零因子, 矛盾.
+
+顺便一提这个环并不noetherian. 虽然这个东西的极大理想很简单, 但它的素理想似乎没什么很好的描述, 遑论其primary ideal. 此外这个环的 zero divisor 是任何零点集不离散的函数. 
+
+> 后面的习题有点丑陋, 不想做. 最后那部分可以在 Matsumura 直接找到而且写的完全比这个书写的清楚.
+
+
+# Chapter 5
+
+> 因为本书没有考虑 finite presentation 的问题, 所以这一节的 finite type + integral = finite 就是这个书里唯一用的有限性.
+
+**第1题**. 对于 $\mathrm{Spec}(B)$ 的 闭集 $V(\mathfrak{b})$ 我们有 $f^{*}(V(\mathfrak{b}))=V(f^{-1}(f(A)\cap \mathfrak{b})).$ 
+
+**第2题**. 
+
+这个题做法还算标准但是写起来有点小麻烦. 为了避免记号冲突我们把题目给的同态改成 $\varphi: A\to \Omega.$ 同态 $\varphi$ 诱导出多项式环的同态, 方便起见我们仍把它记为 $\varphi.$
+
+首先我们把问题归为 $A$ 和 $B$ 整, 而且 $\varphi$ 是单射的情况. 由于 $\varphi(A)\subset\Omega,$ $\varphi$ 的核是一个素理想 $\mathfrak{p}$. 根据 Thm 5.10 我们可以设 $\mathfrak{q}$ 是 $B$ 的 lying over $\mathfrak{p}$ 的素理想, 然后我们改为考虑 $A/\mathfrak{p}\to\Omega.$ 根据 Prop 5.6(i)  $B/\mathfrak{q}$ 在 $A/\mathfrak{p}$ 上整. 一旦我们成功地把它延拓到了 $B/\mathfrak{q},$ 只需先把 $B$ 投影进去就是原本的映射的延拓.
+
+接下来在单扩张的前提下证明该结论. 设 $x\in B$ 使得 $B=A[x],$ 并且设它的最小多项式是 $f(X)\in A[X].$ 由于 $\Omega$ 代数闭, $\varphi(f)$ 这个多项式在 $\Omega$ 中有一根 $\alpha$. 把 $\varphi$ 自然地延拓成 $K$ 到 $\Omega$ 的嵌入, 其中 $K=\mathrm{Frac}(A).$ 考虑同态 $\sigma: K[X]\to\Omega, g\mapsto \varphi(g)(\alpha),$ 它的核含有 $f$ 生成的 $K[X]$ 的极大理想, 因而就是这个极大理想, 从而 $\sigma$ 诱导 $K[X]/(f(X))$ 到像集的同构 . 又知道有同构 $\eta: K[X]/(f(X))\to K(x),$ 那么 $\sigma\circ\eta^{-1}: K(x)\to \Omega$ 限制在 $B=A[X]$ 上就是一个所要的延拓.
+
+最后当这个扩张是任意的, 我们考虑(这里可以看书上 Lemma 5.19 前面的一段)所有的 $(C,\psi)$ 形成的集合, 其中 $A\subset C\subset B$ 是个整环而 $\psi$ 是 $\varphi$ 的延拓, 装备偏序关系 $(C,\psi)\leq (C^{'},\psi^{'})\Leftrightarrow C\subset C^{'}, \psi^{'}|
+_
+C=\psi.$ 可以验证这个集合满足 Zorn lemma 的条件, 因此我们可以取一个极大元. 利用上面一段的事实可以立刻看出这个极大元就是 $B$. 
+
+**第3题**. 这么乘一下最小多项式的样子是不会变的.
+
+**第4题**. 都给他提示完了.
+
+**第5题**. 第1问, 设 $xy=1$ 对 $y\in B.$ 再设 $y^n+...+a
+_
+1y+a
+_
+0=0.$ 在这个式子两边乘以 $x^{n-1}$ 得到 $y+a
+_
+{n-1}+...+a
+_
+0x^{n-1}=0,$ 所以 $y\in A.$ 第2问直接利用在第一章最开始提到的那个引理.
+
+**第6题**. 对于每一个 $x=(x
+_
+i)
+_
+{1\leq i\leq n} \in B=\prod
+_
+{1\leq i\leq n} B
+_
+i,$  $A[x]$ 作为 $A$-module 可以由 $A[x
+_
+i]$ 的生成元们放在一起生成.
+
+**第7题**. 设 $x\in B\backslash A$ 在 $A$ 上整, 并且设 $x^n+a
+_
+{n-1}x^{n-1}...+a
+_
+1x+a
+_
+0=0$ 具有零化它的最小次数. 根据次数最小, $x^{n-1}+a
+_
+{n-1}x^{n-2}...+a
+_
+1\notin A,$ 从而由题设知 $x(x^{n-1}+a
+_
+{n-1}x^{n-2}...+a
+_
+1)\notin A.$ 但是这个是 $a
+_
+0,$ 矛盾.
+
+**第8题**. 第1问, 取 $B$ 的分式域上 $f$ 和 $g$ 的分裂域 $K.$ 我们改为考虑环扩张 $K/C.$ 根据题设条件 $fg$ 的根都在 $C$ 上整, 于是 $f$ 和 $g$ 的根各自在 $C$ 上整, 从而 $f$ 和 $g$ 本身的系数在 $C$ 上整. 而这些系数本来含在 $B$ 当中且 $C$ 在 $B$ 中整闭, 所以这些系数就在 $C$ 中. 第2问, 我们只需要把 $B$ 嵌进某一个环使得这两个多项式在更大的环当中分裂就可以了, 这个过程应该可以模仿分裂域的不依赖代数闭包的构造做.
+
+> 第9和10题给他提示完了. 11直接利用10(ii)c 和 第三章18题. 12至15基本是直接验证. 16 他提示完了. 17至19是 Hilbert's Nullstellensatz, 不写. 20 给他提示完了, 21至25是直接应用.  27之后是赋值的概念, 也不写. 
+
+
+# Chapter 6
+
+**第1题**. 第1问, 考虑 $M$ 的 submoudule 的升链 $\mathrm{ker}(u)\subset\mathrm{ker}(u^2)\subset ...$ 根据诺特这个 stationary, 我们取最大的 $n\in \mathbb{Z}
+_
+{\geq 0}$ 使得 $\mathrm{ker}(u^n)$ 真包含 $\mathrm{ker}(u^{n-1})$ (如果存在的话). 任取一个 $x\in\mathrm{ker}(u^n)$ 根据 $u$ 满可以找到 $a\in M$ 使得 $u(a)=x,$ 从而 $0=u^n(x)=u^{n+1}(a),$ 因此 $a\in\mathrm{ker}(u^{n+1})=\mathrm{ker}(u^n),$ 从而 $x\in\mathrm{ker}(u^{n-1}),$ 矛盾. 因此 $\mathrm{ker}(u)=\mathrm{ker}(\mathrm{id})=0.$ 第2问, 考虑 $\mathrm{im}(u^n)$ 的降链, 其余和上面一样.
+
+**第2题**. 注意关于链条件和极大元的这两个条件等价对于任何的偏序集都是对的.
+
+**第3题**. 我们有显然的正合列 $0\to M/M
+_
+1\to M/(N
+_
+1\cap N
+_
+2)\to M/N
+_
+2\to 0,$ 两边的模 noetherian (resp. artinian) 就推出中间的那个 noetherian (resp. artinian).
+
+**第4题**. 这个直接诉诸升链条件似乎不太好做, 所以我们选择把 $A/\mathfrak{a}$ 实现成一个 noetherian module 的 submodule. 事实上假如我们取 $(x
+_
+i)
+_
+{1\leq i\leq n}$ 是 $M$ 的生成元然后考虑 $A\to M^{\oplus n}, r\mapsto (rx
+_
+i)
+_
+{1\leq i\leq n},$ 这个映射的像是 noetherian module $M^{\oplus n}$ 的 submodule 从而 noetherian, 而它的核显然是 $\mathfrak{a}.$ 如果我们改成 artinian 这个结论是不对的, 反例如本节 Prop 6.1 下面的第三个例子, 他没有指出但是这个群是 $\mathbb{Q}
+_
+p/\mathbb{Z}
+_
+p$ .
+
+> 我本来想说第5题到第7题可以在 Hartshorne 上查到, 结果看了眼发现他没有写6. 不过这三个问题都挺标准的.
+
+**第6题**. 我们改变一下论证的顺序, 因为3推2平凡. 1推3, 对于任何 $Y\subset X$ 取 open cover $(U
+_
+i)
+_
+{i\in I},$ 我们有 $X\backslash U
+_
+i$ 闭而且 $Y\cap (\bigcap
+_
+{i\in I}X\backslash U
+_
+i)=\varnothing.$ 由于 noetherian 只需考虑 $Y\cap (\bigcap
+_
+{1\leq i \leq n}X\backslash U
+_
+i)$ 的降链就知道只需有限多个 $U
+_
+i$ 就可以让后面这个交是空的, 也就是覆盖 $Y.$
+
+2推1, 对任何闭集降链 $...\subset F
+_
+1\subset F
+_
+0,$ 开集 $X\backslash(\bigcap
+_
+{i\geq 0}F
+_
+i)$ quasi-compact, 而它有开覆盖 $(X\backslash F
+_
+i)
+_
+{i\geq 0},$ 只需取它的一个有限子覆盖的最大下标, 在大于这个下标之后上面的降链就 stationary.
+
+> 这题有一个推论是 noetherian 的拓扑空间如果 Hausdorff 就只能是离散的有限集.
+
+**第8题**. $A$ noetherian 推 $\mathrm{Spec}(A)$ noetherian 是直接的. 反过来的方向是不对的, 构造思路是利用 $\mathrm{Spec}(A/\mathrm{Nil}(A))=\mathrm{Spec}(A)$. 我没有构造出来但是
+<a href="https://math.stackexchange.com/questions/7392/" style="color: blue">这里</a> 有很多反例.
+
+**第9题**. 一个 minimal prime 在 $\mathrm{Spec}(A)$ 的等价物是不可约子集, 所以这个事实等价于 $\mathrm{Spec}(A)$ 可以写成有限多个不可约子集的并.
+
+**第10题**. 首先由第三章的第1题知道 $\mathrm{Supp}(M)=V(\mathrm{Ann}(M))$ 所以它是闭的. 根据本章第4题知道 $A/\mathrm{Ann}(M)$ noetherian. 因此 $\mathrm{Supp}(M)=V(\mathrm{Ann}(M))=\mathrm{Spec}(A/\mathrm{Ann}(M))$ noetherian.
+
+> 第11题他天天就惦记着翻译他那 Going-up 和 Going-down到 $\mathrm{Spec}(B)\to\mathrm{Spec}(A)$ 上去, 不写. 第12题两个方向都对, 证明很容易.
+
+# Chapter 7
+
+**第1题**. Zorn引理告诉我们这个集合有极大元. 对于一个极大元 $\mathfrak{a}$ 我们取 $x,y\in A$ 满足 $xy\in\mathfrak{a}$ 和 $x\notin\mathfrak{a}.$ 考虑理想 $\mathfrak{a}+yA.$ 假如 $y\notin A,$ 那么这个理想严格包含了 $\mathfrak{a},$ 因此它有限生成. 我们设其一组生成元是 $(y
+_
+i)_{0\leq i\leq n},$ 其中 $y
+_
+0=y$ 而当 $i>0$ 时 $y
+_
+i\in \mathfrak{a}.$ 设 $\mathfrak{b}\subset\mathfrak{a}$ 是 $(y
+_
+i)_{1\leq i\leq n}$ (有限)生成的理想, 那么 $\mathfrak{a}+yA=\mathfrak{b}+yA,$ 从而 $\mathfrak{a}=\mathfrak{b}+y(\mathfrak{a}:yA).$ 而我们知道 $x\in(\mathfrak{a}:yA),$ $(\mathfrak{a}:yA)$ 严格包含 $\mathfrak{a},$ 因此它有限生成, 从而这导致 $\mathfrak{a}$ 有限生成, 矛盾! 因此 $y\in\mathfrak{a}$ 也即 $\mathfrak{a}$ 是素理想.
+
+> 这个题目是那种做完了会令人不知道为什么感觉良好的题目, 而且结论看上去的确是对“所有理想有限生成”这个条件做了一次简化. Recall: $(I:J)=
+\{
+r\in A\ |\ rJ\subset\I
+\}.$
+
+**第2题**. 假如 $f$ nilpotent 那么它的系数都 nilpotent, 这一点在第一章第5题证明了, 不依赖于 noetherianity. 反过来的方向由书上 Corollary 7.15 直截了当地得到.
+
+**第3题**. 按定义验证.
+
+**第4题**. 
+
+> 想了好久的一题. 非常折磨.
+
+第1问, 考虑由 $\{ X-z\ |\ |z|=1 \}$ 生成的 $\mathbb{C}[X]$ 理想, 容易发现这是个素理想而且题目叙述的环可以看成是 $\mathbb{C}[X]$ 对于这个的局部化, 所以和 $\mathbb{C}[X]$ 一样它是 noetherian.
+
+第2问, 复分析告诉我们这个环是所有在 $0$ 附近全纯的函数. 这是个离散赋值环(它的分式域是所有在 $0$ 附近亚纯而只有极点 $0$ 的函数, 赋值是在 $0$ 处的零点阶数)从而是PID, 当然 noetherian.
+
+第3问, 复分析告诉我们这个环是所有在整个复平面全纯的函数. 考虑以下的理想升链: 令 $I
+_n$ 是那些在所有 $\geq n$ 的整数取 $0$ 的全纯函数. 这永远是严格包含(随便构造一些无穷乘积), 所以这个环不是 noetherian. 
+
+第4问, 前 $k$ 个导数在 $0$ 处取 $0$ 意味着前 $k$ 个系数都是 $0.$ 题目没说清楚包不包括第 $0$ 个导数的情况所以不知道常数项是不是 $0,$ 假如包括那么这个环就是 $\mathbb{C}[X],$ 假如没包括这个环是 $\mathbb{C}+ X^k\mathbb{C}[X],$ 它可以看作是 $\mathbb{C}[X^k]$ 上面的由 $X,\ X^2,...,\ X^{k-1}$ 生成的模, 因此 noetherian.
+
+第5问, 把 $\mathbb{C}[Z,W]$ 的多项式写成 $\sum
+_
+{0\leq i\leq n}a
+_
+i(W)Z^i$ 的形式并且考虑 $\partial
+_
+W$ 知这个环其实是 $\mathbb{C}+Z\mathbb{C}[Z,W].$ 这个环明显不是 noetherian: 令 $I
+_
+n$ 是由 $ZW,\ ZW^2,...,\ ZW^n$ 生成的理想, 这永远是严格包含.
+
+**第5题**. 考虑 $A\subset B^G\subset B,$ 由第5章第12题知 $B$ 在 $B^G$ 上整, 因此根据 Proposition 7.8 就做好了.
+
+> 第6题, 第9题被他提示完了.
+
+**第7题**. 设他考虑这个问题的域是 $k.$ 这个是 $\mathbb{A}^n(k)$ 上面的拓扑 noetherian 的直接推论.
+
+**第8题**. 答案是肯定的, 因为 $A=A[X]/(X).$
+
+**第10题**. > 我本来想说两个 noetherian 模的 tensor product 一定仍然 noetherian, 但是随后注意到他并没有假设 $A$ noetherian. 所以我们只好重新证明. 但是好在证明过程可以把从 $A$ noetherian 推出 $A[X]$ noetherian 的搬运过来.
+
+我们来证明这个东西的所有submodule有限生成. 设 $N$ 是 $M[X]$ 的一个 submodule. 令 $N
+_
+k=
+\{ m
+_
+k\in M\ |\ \sum
+_
+{i=0}^k m
+_
+iX^i \in N
+\}.$ 那么这些是 $M$ 的 submodule 而且 $N
+_
+0\subset N
+_
+1\subset ...$ 假设这个升链到下标 $n$ 以后就再也不增长了. 我们把 $(N
+_
+k)
+_
+{0\leq k\leq n}$ 每一个取有限多个生成元放在一起形成有限集合 $B,$ 那么有限集合 $\{
+\sum
+_
+{0\leq i \leq n} b
+_
+i X^i\ |\ b
+_
+i\in B
+\}$ 足以生成 $N.$
+
+**第11题**. 回顾事实: $S^{-1}A$ 的素理想来自于 $A$ 的那些与 $S$ 不交的素理想, 所以本题的陈述等价于是说所有素理想升链 stationary或者 $\mathrm{Spec}(A)$ noetherian. 而这件事情推不出 noetherian, 我们已经在第六章第8题否定过.
+
+**第12题**. 对于所有的 $A$ 的理想升链 $I
+_
+0\subset I
+_
+1\subset ...$ 考虑 $I
+_
+n\otimes
+_
+A B.$ flatness 保证我们可以把它视为 $B$ 理想升链, 因此这个 stationary, faithfulness 又允许我们把这个事情返回到 $A$ 的理想去.
+
+> 第13题略. 第14题是 Hilbert's Nullstellensatz 不写. 15和16是证明 flat=locally free, 不写. 17到19题可以直接在 Matsumura 查到, 不过实际上这个也跟理想的情况没有任何区别. 20到22题是纯拓扑的验证定义的事情. 23到25题是第5章开始那一堆把 going-up 和 going-down 翻译成拓扑的事情的延续, 不想写. 最后两题是 Grothendieck 群的构造, 不写.
+
+# Chapter 8
+
+> 第1题我没有任何兴趣甚至完全看不懂题目表述. 
+
+> 本章剩下的题目我觉得难度奇高, 在这个书里面显得格格不入, 第5和6题我完全不会.
+
+**第2题**. 1推2是 artinian ring 里面所有素理想都极大和只有有限多个极大理想这两个事实2直接的翻译, 2推3平凡, 3推1因为这个环是 $0$ 维 noetherian ring.
+
+**第3题**. 1推2, artinian ring 是有限多个局部 artinian ring 的乘积, 因此只需要考虑局部情况. 这种情况下这个环的剩余域直接是 $k$ 的有限扩张(考虑这个环自己的生成元的投影作为 $k$ -alg.的生成元, 然后使用这个书上 Corollary 5.24), 因而这个环当然也作为 $k$ -module 有限生成. 2推1, 这是 Proposition 6.5的推论.
+
+**第4题**. 2等价于3, 根据第3章21题, 点 $\mathfrak{p}\in\mathrm{Spec}(A)$ 处的 fiber 被看作是 $\mathrm{Spec}(B\otimes
+_
+A k(\mathfrak{p})),$ 因此根据第2和3题, $\mathrm{Spec}(B\otimes
+_
+A k(\mathfrak{p}))$ 离散等价于 $B\otimes
+_
+A k(\mathfrak{p})$ 是 artinian ring, 又等价于 $B\otimes
+_
+A k(\mathfrak{p})$ 是 finite $k(\mathfrak{p})$ -alg.(因为它作为 $k(\mathfrak{p})$ -alg. 足以通过一组 $B$ 作为 $A$ -alg. 的生成元得到). 3推4, 根据第2题 $\mathrm{Spec}(B\otimes
+_
+A k(\mathfrak{p}))$ 离散推出 $\mathrm{Spec}(B\otimes
+_
+A k(\mathfrak{p}))$ 有限. 
+
+1推2, 条件是 $B$ 作为 $A$ -模有限生成, 当然有 $B
+_
+\mathfrak{p}$ 作为 $A
+_
+\mathfrak{p}$ -模有限生成, 从而 $B
+_
+{\mathfrak{p}}/\mathfrak{p}B
+_
+\mathfrak{p}$ 作为 $k(\mathfrak{p})=A
+_
+\mathfrak{p}/\mathfrak{p}A$ -模有限生成, 根据第3题这就是所要的结论.
+
+即使 $f$ 整而 $f^{*}$ finite, 也不能得出 $f$ finite. 我们可以取 $A=\mathbb{Q},$ $B=\mathbb{Q}^{alg}$ (代数闭包), $f$ 是 inclusion. 由于这两个都是域而且这个是代数扩张所以 $f$ 整, 它们的 spectrum 都是单点所以 $f^{*}$ 当然 finite. 但是 $f$ 不是 finite. 
+
+**第5题**. 
+
+> 本题我的回答大概率是错的, 因为我完全没有用到代数闭的假设, 我也看不出来 Hilbert's Nullstellensatz 和这个问题有什么关系; 但是我也看不出来我的回答问题在哪里.
+
+> 题目的完整叙述是: $k$ 代数闭, $X$ 是 $k^n$ 中的 affine variety, $L$ 是某个 $k^n$ 的 $r$ 维线性子空间, 线性映射 $\pi:k^n\to L$ 满足 $\pi(X)=L.$ 要证明 $L$ 的每个点处的fiber的元素个数有限而且有一个一致的上界.
+
+<p style="background-color:yellow;">
+沿用第5章第16题的记号, 设 $X$ 的系数环 $A$ 作为 $k$ -alg. 由 $(x
+_
+i)
+_
+{1\leq i\leq n}$ 生成, $L$ 的系数环 $B$ 由代数无关的元素 $(y
+_
+i)
+_
+{1\leq i\leq r}$ 生成, 诸 $y
+_
+i$ 是 $x
+_
+i$ 的线性组合, 且 $A$ 在 $B$ 上整. 考虑 $f:B\to A$ 是 inclusion. 这个映射显然是 finite type, 又因为整, 所以finite, 根据<a href="https://math.stackexchange.com/q/57277" style="color: blue">这个回答</a>里的结论就做完了.
+</p>
+
+> 第6题我不会做. <a href="https://math.stackexchange.com/q/59864" style="color: blue">这个回答</a>看起来比较靠谱.
+
+
+# Chapter 9
+
+> 第1题平凡.
+
+**第2题**. 考虑局部情况即可. 不妨假设 $A$ 是离散赋值环, 那么 $\mathrm{c}(f)$ 和  $\mathrm{c}(g)$ 是主理想. 设它们当中赋值最小的元素分别是 $a$ 和 $b,$ 并且按定义我们可以设它们是 $f$ 和 $g$ 的某个系数. 那么显然 $ab\in\mathrm{c}(fg).$ 这一定也是 $\mathrm{c}(fg)$ 当中赋值最小的元素.
+
+**第3题**. 离散赋值环 noetherian 是显然的. 反过来假如我们有一个 noetherian 的赋值环, 因为这当然是个局部环, 根据 Proposition 9.2 我们只需要再证明它是个PID. 事实上对它的任何一个理想, 根据 noetherianity 取有限多个生成元, 根据第5章第28题就做完了.
+
+**第4题**. 这个可以按定义证明. 对于 $x\in A$ 定义 $x$ 的赋值是使得 $x\in \mathfrak{m}^n$ 的最大 $n.$ 题目所给的条件保证了这个在除了 $0$ 处都是有限数.
+
+**第5题**. 对于 $A$ 上面的有限生成模 $M$ 回顾事实(在第3章第13题证明)“无挠”是局部性质, 而 flat 对于 noetherian ring 等价于局部自由, 因此我们不妨假设 $A$ 是DVR, 特别地是PID, 局部地看本题结论就是熟知的“PID上无挠等价于自由”.
+
+**第6题**. 因为 $A$ 上的有限生成模相等是局部性质, 我们不妨假设 $A$ 是DVR, 特别地它是PID, 这样本题结论变成PID上有限生成挠模的结构.
+
+**第7题**. 根据中国剩余定理不妨设 $\mathfrak{a}$ 是 prime power, 而熟知 $A/\mathfrak{p}^n=A
+_
+\mathfrak{p}/\mathfrak{p}^nA
+_
+\mathfrak{p},$ 后者是PID(因为 $A
+_
+\mathfrak{p}$ 就已经是PID).
+
+> 第8和9题可以在任何代数数论书上找到.
+
+# Chapter 10
+
+> 本章如果真的仔细写细节的话公式量会非常恐怖, 所以就粗糙一些了. 此外还好他题目不多. 
+
+**第1题**. 这题 $A=\bigoplus
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z},$ $B=\bigoplus
+_
+{n\geq 1}\mathbb{Z}/p^n\mathbb{Z},$ $\alpha: A\to B$ 是逐个分量的自然的单射. 我们来考虑这两边的 $p$ -adic 完备化. 对于 $A$ 而言由于 $pA=0$ 我们有 $\varprojlim A/p^nA=\varprojlim A=A.$ 然而假如把 $A$ 看作是 $B$ 的子空间, 即令 $A
+_
+n=\alpha^{-1}(p^nB)=\bigoplus
+_
+{k\geq n} \mathbb{Z}/p\mathbb{Z},$ 那么 $A/A
+_
+n=\bigoplus
+_
+{k=1}^n \mathbb{Z}/p\mathbb{Z},$ 显然 
+
+$\varprojlim A/A
+_
+n=\prod
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z}.$ 
+
+下面说明 $\varprojlim -/p^n-$ 完备化不是右正合的. 考虑正合列 
+
+$0\to A\to B \to B/\alpha A\to 0.$
+
+容易算出 
+
+$\varprojlim B/p^nB=\prod
+_
+{n\geq 1}\mathbb{Z}/p^n\mathbb{Z},$ 
+
+又注意到 $B/\alpha A=pB$ 因而 $B\to B/\alpha A$ 的映射在完备化之后依然是由乘以 $p$ 给出的, 但是在 $\prod
+_
+{n\geq 1}\mathbb{Z}/p^n\mathbb{Z}$ 上面乘以 $p$ 这个映射的核当然不是 $\prod
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z}.$ 
+
+**第2题**. 根据上题, 这里所述的正合列是 
+
+$0\to\bigoplus
+_
+{k\geq n} \mathbb{Z}/p\mathbb{Z}\to\bigoplus
+_
+{k\geq 1} \mathbb{Z}/p\mathbb{Z}\to\bigoplus
+_
+{k=1}^n \mathbb{Z}/p\mathbb{Z}.$ 
+
+取 $\varprojlim$ 之后第一项没了, 中间那项不变, 最后一项变成 $\prod
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z},$ 把直和打到直积里面不是满的, 所以 $\varprojlim$ 不是右正合的. 
+
+根据 Proposition 10.2 我们有正合列
+
+$$0\to\bigoplus
+_
+{k\geq 1} \mathbb{Z}/p\mathbb{Z}\to\prod
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z}\to\varprojlim^1 A
+_
+n\to\varprojlim^1 A$$
+
+而显然 $\varprojlim^1 A=0,$ 所以
+
+$$\varprojlim^1 A
+_
+n=\frac{\prod
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z}}{\bigoplus
+_
+{n\geq 1}\mathbb{Z}/p\mathbb{Z}}.$$
+
+**第3题**. 把左边记为 $E,$ 右边记为 $F.$ 根据 Theorem 10.17,  $E$ 是那些被 $1+\mathfrak{a}$ 中的某个元素零化的 $M$ 元素, 因此根据第3章第1题 $E\subset F$. 又显然右边对所有含 $\mathfrak{a}$ 的极大理想局部化都是 $0,$ 所以根据第3章第14题, 我们得到 $F=\mathfrak{a}F,$ 所以 $F\subset E.$
+
+$\hat{M}=0$ 当且仅当上面的 $E=M,$ 这等价于 $F=M$ 即 $\mathrm{Supp}(M)$ 不含有任何含有 $\mathfrak{a}$ 的素理想, 也就是说即 $\mathrm{Supp}(M)\cap V(\mathfrak{a})=\varnothing.$ 
+
+**第4题**. $x$ 不是 zero divisor 等价于乘以 $x$ 的映射是单射. 考虑正合列 $0\to xA\to A\to A/xA\to 0.$ 根据 Proposition 10.12 我们知道也有 $0\to \hat{x}\hat{A}\to \hat{A}\to \widehat{A/xA}\to 0,$ 这表明在 $\hat{A}$ 中乘以 $\hat{x}$ 的映射也是单的, 即它不是零因子. 
+
+$A$ 是整环推不出 $\hat{A}$ 是整环. <a href="https://math.stackexchange.com/q/186549" style="color: blue">这个se回答</a>中的第二个反例非常美丽.
+
+> 第5题他提示完了.
+
+**第6题**. 左推右, 如果 $\mathfrak{a}\subset\mathrm{J}(A),$ 那么对任何极大理想 $\mathfrak{m}$ 以及 $x\notin \mathfrak{m},$ $x+\mathfrak{a}$ 就是 $x$ 在 $\mathfrak{a}$ -adic 拓扑下的一个邻域, 而且它与 $\mathfrak{m}$ 不交, 因此 $\mathfrak{m}$ 是闭的. 右推左, 假如有一个极大理想 $\mathfrak{m}$ 不包含 $\mathfrak{a},$ 由于 $1\notin\mathfrak{m},$ 存在某个充分大的 $n$ 使得(基本邻域) $1+\mathfrak{a}^n$ 和 $\mathfrak{m}$ 不交. 而我们知道 $\mathfrak{a}^n+\mathfrak{m}=A,$ 我们选取 $x\in\mathfrak{a}^n$ 和 $y\in\mathfrak{m}$ 使得 $x+y=1$ 那么 $y\in 1+\mathfrak{a}^n\cap\mathfrak{m},$ 矛盾!
+
+**第7题**. 把本章第3题, 第6题和第3章第16题(iv)的结论合起来即可.
+
+**第8题**. > 我老百姓对多复变没有任何了解, 不清楚这样的函数是否也能像第7章第4题里面那样有简单直接的刻画. 但是直接做也可以. 
+
+我们需要如下**引理**: 对于同一个极大理想的完备化和局部化可以交换顺序.
+
+引理的证明只需验证 $A_{\mathfrak{m}}/(\mathfrak{m}A_{\mathfrak{m}})^n = (A/\mathfrak{m}^n)_{\mathfrak{m}}.$
+
+首先 $B$ 是局部的, 因为这是个赋值环: 它上面有赋值“组成这个形式幂级数的所有 monomial 当中最低的次数”. 它的唯一极大理想 $\mathfrak{m}$ 是所有在 $0$ 处取 $0$ 的函数.
+
+下面证明 $B$ 的 $\mathfrak{m}$ -adic 完备化就是 $C.$ 我们直接验证泛性质. 设 $D$ 是任一 $B$ -module, 并且对每个 $n$ 有映射 $\varphi
+_
+n:D\to B/\mathfrak{m}^n$ 满足对于 $m\geq n,$ $\varphi
+_
+m$ 复合上投影 $B/\mathfrak{m}^m\twoheadrightarrow B/\mathfrak{m}^n$ 之后就是 $\varphi
+_
+n.$ 观察到 $B/\mathfrak{m}^n$ 的元素形如 $f+\mathfrak{m}^n,$ 其中 $f$ 是任何的次数小于 $n$ 的多项式, 我们可以定义 $D\to C$ 为把一个形式幂级数当中的一个 $n$ 次的 monomial 打到这个 monomial在 $\varphi
+_
+{n+1}$ 下的像, 容易观察到这个定义方式使得应该交换的图表交换, 并且是唯一的, 这说明 $B$ 的 $\mathfrak{m}$ -adic 完备化是 $C.$
+
+假设 $B$ notherian. 根据上一题我们知道 $C$ faithfully flat over $B,$ 利用第三章第17题的结论知道只需再证明 $C$ flat over $A.$ 为此我们考虑 $E=\mathbb{C}[X
+_
+1,...,X
+_
+n],$ 那么 $A$ 是 $E$ 对于极大理想“在0处取0的多项式”的局部化, 因此 $A$ 在 $E$ 上平坦. 把这个极大理想记作 $\mathfrak{n},$ 容易验证我们有同构 $E/\mathfrak{n}^n\simeq B/\mathfrak{m}^n,$ 因此 $E$ 的 $\mathfrak{m}$ -adic 完备化也是 $C,$ 根据下面的引理, $C$ 也是 $A$ 的 完备化, 所以 $C$ 在 $A$ 上面 faithfully flat, 更是 flat.
+
+> 第9题是 Hensel 引理, 可以在任何代数数论书找到.
+
+**第10题**. 回家的感觉. 第1问是 Hensel 引理的直接应用. 第2问也是, 因为 $\mathbb{Z}
+_
+7/7\mathbb{Z}
+_
+7=\mathbb{Z}/7\mathbb{Z}$ 中 $X^2-2$ 有解所以它在 $\mathbb{Z}
+_
+7$ 里面也有解. 第3问类似地考虑局部环 $k[X],$ 它的极大理想是 $(X),$ 然后对这个使用 Hensel 引理即可. 
+
+> 第11题他提示完了.
+
+**第12题**. 考虑 $A\subset A[X
+_
+1,...,X
+_
+n]\subset A[[X
+_
+1,...,X
+_
+n]].$ 重复第8题的过程我们知道 $A[[X
+_
+1,...,X
+_
+n]]$ 是 $A[X
+_
+1,...,X
+_
+n]$ 对于极大理想 $(X
+_
+1,...,X
+_
+n)$ 的完备化, 因此它 faithfully flat over $A[X
+_
+1,...,X
+_
+n].$ 根据第2章第5题我们知道 $A[X
+_
+1,...,X
+_
+n]$ flat over $A,$ 所以 $A[[X
+_
+1,...,X
+_
+n]]$ flat over $A.$ 利用第3章第16题(i)的 faithfully flatness 的等价定义并且重复使用第1章第5题(v)的结论就知道 $A[[X
+_
+1,...,X
+_
+n]]$ is faithfully flat over $A.$ 
+
+
+# Chapter 11
+
+**第1题**. 不妨设 $P=0,$ 那么 $\mathfrak{m}=(X
+_
+1+(f),...,X
+_
+n+(f)).$ 由 Corollary 11.18  知 $\mathrm{dim}A
+_
+\mathfrak{m}=n-1,$ 所以 $A
+_
+\mathfrak{m}$ 是 regular local ring 等价于 $\mathfrak{m}/\mathfrak{m}^2$ 作为 $A/\mathfrak{m}$ -线性空间的维数是 $n-1.$ 由 Corollary 11.15 知道 $\mathfrak{m}/\mathfrak{m}^2$ 作为 $A/\mathfrak{m}$ -线性空间的维数至少是 $n-1,$ 而它显然不超过 $n,$ 所以只能是 $n$ 或者 $n-1.$ 
+而 $f$ 在 $0$ 处各偏导数都是 $0$ 当且仅当 $f\in(X
+_
+1,...,X
+_
+n)^2,$ 这种情况下 $\mathfrak{m}/\mathfrak{m}^2=(X
+_
+1,...,X
+_
+n)/((X
+_
+1,...,X
+_
+n)^2+(f))=(X
+_
+1,...,X
+_
+n)/(X
+_
+1,...,X
+_
+n)^2$ 是 $n$ 维, 因此等价于不 regular. 
+
+**第2题**. 首先来证明题目所给的是单射. 上一章第8题证明了 $k[X
+_
+1,...,X
+_
+d]$ 对于理想 $I=(X
+_
+1,...,X
+_
+d)$ 的完备化是 $k[[X
+_
+1,...,X
+_
+d]].$ 考虑由题目里所给的取值同态所诱导的 $k[X
+_
+1,...,X
+_
+d]/I^n\to A/\mathfrak{m}^n$ 的映射. 根据代数独立性容易看出这是个单射. 我们在两边取 $\varprojlim$ 并且结合 $A$ 完备就知道 $k[[X
+_
+1,...,X
+_
+d]]\to A$ 是单射. 在这个单射下 $I$ 对应的 $A$ 理想是 $\mathfrak{a}=(x
+_
+1,...,x
+_
+d),$ 它是 $\mathfrak{m}$ -primary ideal. 最后我们验证 $A$ 的分次环在对应的形式幂级数环的分次环上有限生成. 根据 Proposition 10.22, $\mathrm{gr}^I(k[[X
+_
+1,...,X
+_
+d]])$ 和 $\mathrm{gr}^I(k[X
+_
+1,...,X
+_
+n])$ 是同构的, 后者对于 $I$ 的分次结构就是这个多项式环本身, 而 $\mathrm{gr}^\mathfrak{a}(A)=A/\mathfrak{a}[x
+_
+1,...,x
+_
+d],$ 结合 $k$ 映满 $A/\mathfrak{m}$ 我们只需要证明 artinian ring $A/\mathfrak{a}$ 作为 $A/\mathfrak{m}$ -alg. finite. 这个是因为取充分大的 $n$ 使得 $\mathfrak{m}^n\subset\mathfrak{a},$ 那么 $\mathrm{dim}
+_
+{A/\mathfrak{m}}A/\mathfrak{a}=\sum
+_
+{k=1}^n\mathrm{dim}(\mathfrak{m}^{k-1}/\mathfrak{am}^{k}) <\infty.$
+
+**第3题**. 这是他的提示加上 Lemma 11.26 和 Corollary 11.27 的直接组合.
+
+> 第4题他提示完了. 第5题没什么可写的. 第7题他提示完了.
+
+**第6题**. 对某个 $A$ 中的长度 $d$ 的素理想升链 
+
+$\mathfrak{p}
+_
+0\subset \mathfrak{p}
+_
+1 \subset...\subset\mathfrak{p}
+_
+d$
+
+ 我们有 $A[X]$ 中的素理想升链 
+
+$\mathfrak{p}
+_
+0[X]\subset \mathfrak{p}
+_
+1[X] \subset...\subset\mathfrak{p}
+_
+d[X]\subset\mathfrak{p}
+_
+d+(x),$
+
+所以 $\mathrm{dim}A[X]\geq \mathrm{dim}A +1.$
+
+另一个方向他提示完了.
+
+
+这差不多是花了一星期写完的, 我只能说写麻了. 那么我们明年再见.
