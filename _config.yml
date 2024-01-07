@@ -14,9 +14,7 @@ menu:
     url: /about
   - title: Contact
     url: /contact
-  - title: Test
-    url: /test
-  - title: Diary(Under Construction)
+  - title: Diary
     url: /diary
   - title: Feed
     url: /feed.xml
