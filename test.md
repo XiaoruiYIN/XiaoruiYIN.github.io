@@ -8,21 +8,21 @@ permalink: /test/
 # Last update:
 
 2024.01.07
-Paris,France
+Paris, France
 
 # 过去的更新
 
 2023.12.30
-Paris,France
+Paris, France
 
 2023.12.27
-Paris,France
+Paris, France
 
 2023.12.24
-Paris,France
+Paris, France
 
 2023.12.23
-Paris,France
+Paris, France
 
 2023.11.20
 Paris, France
