@@ -10,7 +10,7 @@
         <option value="2023">2023</option>
         <option value="2024">2024</option>
     </select>
-    \<label for="year">年</label>
+    <label for="year">年</label>
 
     
 <select id="month" name="month" onchange="generateDays()">
@@ -33,7 +33,7 @@
             monthSelect.innerHTML = '';
 
             // 如果年份是2023年，则只显示09到12月
-            if (yearSelect.value === '2023') {
+        if (yearSelect.value === '2023') {
                 for (var i = 9; i <= 12; i++) {
                     var month = i < 10 ? '0' + i : '' + i;
                     var option = document.createElement("option");
