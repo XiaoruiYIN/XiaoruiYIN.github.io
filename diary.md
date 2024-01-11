@@ -6,26 +6,26 @@
 
 <a href="https://www.norange555.com/diary/202401">2024年01月</a>
 
-    <select id="year" name="year" onchange="updateMonthOptions()">
+<select id="year" name="year" onchange="updateMonthOptions()">
         <option value="2023">2023</option>
         <option value="2024">2024</option>
     </select>
-    <label for="year">年</label>
+    \<label for="year">年</label>
 
     
-    <select id="month" name="month" onchange="generateDays()">
+<select id="month" name="month" onchange="generateDays()">
         <option value="00">00</option>
     </select>
     <label for="month">月</label>
 
-    <select id="day" name="day">
+<select id="day" name="day">
         <option value="00">00</option>
     </select>
     <label for="day">日</label>
 
-    <button onclick="targetdate()">Search</button>
+<button onclick="targetdate()">Search</button>
 
-    <script>
+<script>
         function updateMonthOptions() {
             var yearSelect = document.getElementById("year");
             var monthSelect = document.getElementById("month");
