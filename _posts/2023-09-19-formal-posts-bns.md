@@ -10,7 +10,7 @@ category: BNS
 tags:
   - BNS
   - Mathematics
-author: X.YIN
+author: YXR
 math: true
 ---
 
