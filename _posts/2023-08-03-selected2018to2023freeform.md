@@ -9,7 +9,7 @@ optimized_image: https://raw.githubusercontent.com/XiaoruiYIN/gtiobnsimg/main/im
 category: Music
 tags:
   - Music
-author: X.YIN
+author: YXR
 math: true
 ---
 
